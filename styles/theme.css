@@ -1,0 +1,16 @@
+:root {
+  --primary: #628ce1;
+  --info: #1f3057;
+  --success: #53a57c;
+  --warning: #d09444;
+  --danger: #f44336;
+  --white: #F3F6F6;
+  --black: #1f3057;
+  --bg-color: var(var(--white));
+  --text-color: var(--info);
+}
+
+[data-theme="dark"]:root {
+  --bg-color: var(--black);
+  --text-color: var(--white);
+}

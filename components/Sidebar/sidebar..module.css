@@ -1,0 +1,22 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.75rem;
+}
+
+.sidebar__header img {
+  width: 4rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.sidebar__content {
+  flex: 1 1;
+}
