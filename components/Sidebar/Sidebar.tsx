@@ -16,11 +16,26 @@ function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <header className={styles.sidebar__header}>
-        <Image src={logo} alt="logo" />
-        <span>Chess arbiter</span>
-        <button onClick={onToggleTheme}>{nextTheme}</button>
+        <div className={styles.logo_wrapper}>
+          <Image src={logo} alt="logo" />
+          <span>Chess arbiter</span>
+          <button onClick={onToggleTheme}>{nextTheme}</button>
+        </div>
+        <div className={styles.sidebar_tabs}>
+          <a className={styles.active}>Basic</a>
+          <a>Laws</a>
+        </div>
       </header>
-      <div className={styles.sidebar__content}> Content</div>
+      <nav className={styles.navigation}>
+        <a>
+          Intro
+          <span>Toggle</span>
+        </a>
+        <a>
+          Intro
+          <span>Toggle</span>
+        </a>
+      </nav>
       <footer className="sidebar__footer">Footer</footer>
     </aside>
   );

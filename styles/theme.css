@@ -6,8 +6,11 @@
   --danger: #f44336;
   --white: #F3F6F6;
   --black: #1f3057;
+  --gray: #727891;
+  --gray-alpha: #72789133;
   --bg-color: var(var(--white));
   --text-color: var(--info);
+  --border-color: var(--gray);
 }
 
 [data-theme="dark"]:root {
