@@ -7,7 +7,7 @@ export default function Home() {
 export const getServerSideProps = async (context: NextPageContext) => {
   const { res } = context;
   res?.writeHead(302, {
-    Location: "/rules/rule1",
+    Location: "en/rules/rule1",
   });
   res?.end();
 
