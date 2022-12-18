@@ -20,6 +20,7 @@
   border: none;
   color: var(--text-color);
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .sidebar__header img {

@@ -1,25 +1,32 @@
 import { useState } from "react";
 import Image from "next/image";
-import styles from "./sidebar..module.css";
+import styles from "./sidebar.module.css";
 import logo from "../../public/logo.png";
 import { getTheme, toggleTheme } from "../../utils/theme";
 import { Theme } from "../../constants/global";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
 import Icon from "../Icon/Icon";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
+import { IIconName } from "../../models/iconName";
 
-const themeIcon = {
+interface IthemeIcon {
+  [key: string]: IIconName;
+}
+
+const themeIcon: IthemeIcon = {
   dark: "dark-mode",
   light: "light-mode",
-} as const;
+};
 
 function Sidebar() {
   const [theme, setTheme] = useState(getTheme);
   const nextTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
+
   const onToggleTheme = () => {
     const newTheme = toggleTheme();
     setTheme(newTheme);
   };
+
   return (
     <aside className={styles.sidebar}>
       <header className={styles.sidebar__header}>
@@ -31,8 +38,8 @@ function Sidebar() {
           </button>
         </div>
         <div className={styles.sidebar_tabs}>
-          <a className={styles.active}>Basic</a>
           <a>Laws</a>
+          <a className={styles.active}>Basic</a>
         </div>
       </header>
       <nav className={styles.navigation}>
