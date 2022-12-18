@@ -1,3 +1,4 @@
+import { IIconName } from "../../models/iconName";
 import styles from "./icon.module.css";
 
 type SvgProps = {
@@ -14,20 +15,11 @@ function Svg({ className, children, ...props }: SvgProps) {
   );
 }
 
-type IocnProps = {
-  name:
-    | "dropdown"
-    | "fb"
-    | "dark-mode"
-    | "light-mode"
-    | "fb"
-    | "mobile"
-    | "ru"
-    | "en"
-    | "arm";
+export type IconProps = {
+  name: IIconName;
 };
 
-export default function Icon({ name }: IocnProps) {
+export default function Icon({ name }: IconProps) {
   switch (name) {
     case "dropdown": {
       return (
@@ -73,7 +65,7 @@ export default function Icon({ name }: IocnProps) {
     case "ru": {
       return (
         <Svg viewBox="0 0 640 480">
-          <g fill-rule="evenodd" stroke-width="1pt">
+          <g fillRule="evenodd" strokeWidth="1pt">
             <path fill="#fff" d="M0 0h640v480H0z" />
             <path fill="#0039a6" d="M0 160h640v320H0z" />
             <path fill="#d52b1e" d="M0 320h640v160H0z" />
