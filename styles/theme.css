@@ -5,9 +5,10 @@
   --warning: #d09444;
   --danger: #f44336;
   --white: #F3F6F6;
-  --black: #1f3057;
+  --black: #141d30;
   --gray: #727891;
   --gray-alpha: #72789133;
+  --primary-alpha: #628ce17d; 
   --bg-color: var(var(--white));
   --text-color: var(--info);
   --border-color: var(--gray);

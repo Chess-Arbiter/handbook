@@ -5,6 +5,13 @@ import logo from "../../public/logo.png";
 import { getTheme, toggleTheme } from "../../utils/theme";
 import { Theme } from "../../constants/global";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
+import Icon from "../Icon/Icon";
+import SidebarFooter from "../SidebarFooter/SidebarFooter";
+
+const themeIcon = {
+  dark: "dark-mode",
+  light: "light-mode",
+} as const;
 
 function Sidebar() {
   const [theme, setTheme] = useState(getTheme);
@@ -19,7 +26,9 @@ function Sidebar() {
         <div className={styles.logo_wrapper}>
           <Image src={logo} alt="logo" />
           <span>Chess arbiter</span>
-          <button onClick={onToggleTheme}>{nextTheme}</button>
+          <button onClick={onToggleTheme}>
+            <Icon name={themeIcon[nextTheme]} />
+          </button>
         </div>
         <div className={styles.sidebar_tabs}>
           <a className={styles.active}>Basic</a>
@@ -27,16 +36,16 @@ function Sidebar() {
         </div>
       </header>
       <nav className={styles.navigation}>
-        <a>
+        <a className={styles.active}>
           Intro
-          <span>Toggle</span>
+          <Icon name="dropdown" />
         </a>
         <a>
           Intro
-          <span>Toggle</span>
+          <Icon name="dropdown" />
         </a>
       </nav>
-      <footer className="sidebar__footer">Footer</footer>
+      <SidebarFooter />
     </aside>
   );
 }

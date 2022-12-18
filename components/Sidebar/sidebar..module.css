@@ -16,6 +16,10 @@
 
 .logo_wrapper button {
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.25rem;
 }
 
 .sidebar__header img {
@@ -59,8 +63,13 @@
   justify-content: space-between;
   padding: 1rem 0.5rem 1rem 1.25rem;
   align-items: center;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .navigation a:hover {
   background-color: var(--gray-alpha);
+}
+.navigation a.active {
+  background-color: var(--primary-alpha);
 }
