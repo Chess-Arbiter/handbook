@@ -1,0 +1,43 @@
+.navigation {
+  flex: 1 1;
+  padding-right: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.navigation .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 1rem 1.25rem;
+  align-items: center;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.navigation .item:hover {
+  background-color: var(--gray-alpha);
+}
+
+.input {
+  display: none;
+}
+
+.content {
+  display: none;
+}
+
+.content > .item{
+    padding-left: 2rem;
+}
+
+input.input:checked + .item + .content {
+  display: block;
+}
+
+.input:checked + .item {
+  background-color: var(--primary-alpha);
+}
+
+.input:checked + .item svg {
+  transform: rotate(180deg);
+}
