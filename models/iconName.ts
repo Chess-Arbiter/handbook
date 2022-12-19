@@ -1,3 +1,5 @@
+import { LANGUAGES } from "./languages";
+
 export type IIconName =
   | "dropdown"
   | "fb"
@@ -5,6 +7,6 @@ export type IIconName =
   | "light-mode"
   | "fb"
   | "mobile"
-  | "ru"
-  | "en"
-  | "arm";
+  | LANGUAGES.EN
+  | LANGUAGES.RU
+  | LANGUAGES.HY;

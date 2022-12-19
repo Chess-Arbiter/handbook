@@ -1,20 +1,40 @@
 import Head from "next/head";
+import { Fragment } from "react";
+import Data from "../../../constants/data";
+import { Page } from "../../../models/page";
+import getPage from "../../../util/getPage";
 
-export default function PageContent() {
+export default function PageContent({ page }: { page: Page }) {
   return (
     <>
       <Head>
-        <title>Title</title>
+        <title>{page.title}</title>
+        {page.description && (
+          <meta name="description" content={page.description} />
+        )}
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <h1>Page Title</h1>
-      <h2>Subtitle</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        reiciendis ex, voluptas eius, officia mollitia nobis expedita natus est
-        qui, ipsa quaerat quas dicta laboriosam vitae temporibus inventore
-        dolores consectetur?
-      </p>
+      <Data />
+      {/* <div dangerouslySetInnerHTML={{ __html: page.content }} /> */}
     </>
   );
+}
+
+export async function getServerSideProps({ params }: any) {
+  try {
+    // const pageDoc = await getPage(params.page);
+    // const page: Page = {
+    //   title: pageDoc?.[`title_${params.lang}`] || "",
+    //   description: pageDoc?.[`description_${params.lang}`] || "",
+    //   content: pageDoc?.[`content_${params.lang}`] || "",
+    // };
+
+    return {
+      props: { page: {} },
+    };
+  } catch {
+    return {
+      notFound: true,
+    };
+  }
 }
