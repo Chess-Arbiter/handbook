@@ -1,4 +1,5 @@
 import { IIconName } from "../../models/iconName";
+import { LANGUAGES } from "../../models/languages";
 import styles from "./icon.module.css";
 
 type SvgProps = {
@@ -36,7 +37,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case "arm": {
+    case LANGUAGES.HY: {
       return (
         <Svg viewBox="0 0 640 480">
           <path fill="#d90012" d="M0 0h640v160H0z" />
@@ -45,7 +46,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case "en": {
+    case LANGUAGES.EN: {
       return (
         <Svg viewBox="0 0 640 480">
           <path fill="#012169" d="M0 0h512v512H0z" />
@@ -62,7 +63,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case "ru": {
+    case LANGUAGES.RU: {
       return (
         <Svg viewBox="0 0 640 480">
           <g fillRule="evenodd" strokeWidth="1pt">
