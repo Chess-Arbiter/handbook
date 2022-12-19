@@ -10,10 +10,10 @@ function LanguageLink({ lang }: { lang: any; pathname: string }) {
     const pathArr = window.location.pathname.split("/");
     pathArr.shift();
     pathArr[0] = lang;
-    console.log(pathArr);
 
-    return pathArr.join("/");
+    return `/${pathArr.join("/")}`;
   }
+
   return (
     <Link key={lang} href={getLink()} className={styles.lang}>
       <Icon name={lang} />
@@ -22,7 +22,7 @@ function LanguageLink({ lang }: { lang: any; pathname: string }) {
 }
 
 export default function SidebarFooter() {
-  const { query, replace, pathname } = useRouter();
+  const { query, pathname } = useRouter();
   const languages = useMemo((): LANGUAGES[] => {
     const ALL_LANGUAGES = [LANGUAGES.EN, LANGUAGES.RU, LANGUAGES.HY];
     const currentLanguage: any = query.lang || languages[0];

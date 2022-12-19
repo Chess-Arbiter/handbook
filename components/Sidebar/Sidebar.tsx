@@ -8,6 +8,7 @@ import withClientSideComponent from "../../hoc/withClientSideComponent";
 import Icon from "../Icon/Icon";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import { IIconName } from "../../models/iconName";
+import Accordion from "../Accordion/Accordion";
 
 interface IthemeIcon {
   [key: string]: IIconName;
@@ -43,16 +44,7 @@ function Sidebar() {
             <a className={styles.active}>Basic</a>
           </div>
         </header>
-        <nav className={styles.navigation}>
-          <a className={styles.active}>
-            Intro
-            <Icon name="dropdown" />
-          </a>
-          <a>
-            Intro
-            <Icon name="dropdown" />
-          </a>
-        </nav>
+        <Accordion />
         <SidebarFooter />
       </div>
     </aside>

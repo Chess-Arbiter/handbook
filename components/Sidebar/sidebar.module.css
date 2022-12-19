@@ -55,24 +55,3 @@
 }
 /* Sidebar header end */
 
-.navigation {
-  flex: 1 1;
-  padding-right: 1.25rem;
-  padding-bottom: 1.5rem;
-}
-
-.navigation a {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0.5rem 1rem 1.25rem;
-  align-items: center;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
-.navigation a:hover {
-  background-color: var(--gray-alpha);
-}
-.navigation a.active {
-  background-color: var(--primary-alpha);
-}
