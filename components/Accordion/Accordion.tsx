@@ -1,33 +1,51 @@
+import Link from "next/link";
 import React from "react";
+import { menuTrees } from "../../data/menuTrees";
+import getLink from "../../utils/getLink";
 import Icon from "../Icon/Icon";
 import styles from "./Accordion.module.css";
 
-export default function Accordion() {
-  const openAccordion = (e: any) => {
-    console.log(e.target.value);
-  };
-
-  const pages = ["page1", "page2"];
+export default function Accordion({
+  defaultOpenedItem,
+  currentSlug,
+  language,
+  asPath,
+}: {
+  defaultOpenedItem: string;
+  currentSlug: any;
+  language: any;
+  asPath: string;
+}) {
+  const basic = menuTrees.filter((el: any) => el.type === 2);
 
   return (
     <nav className={styles.navigation}>
-      {pages.map((page) => (
-        <React.Fragment key={page}>
+      {basic.map((tree: any) => (
+        <React.Fragment key={tree.id}>
           <input
-            id={page}
+            id={tree.id}
             type="radio"
             className={styles.input}
             name="sidebar"
-            onChange={openAccordion}
-            value={page}
-            defaultChecked
+            value={tree.id}
+            defaultChecked={tree.id === defaultOpenedItem}
           />
-          <label htmlFor={page} className={styles.item}>
-            Intro
+          <label htmlFor={tree.id} className={styles.item}>
+            {tree[`title_${language}`]}
             <Icon name="dropdown" />
           </label>
           <div className={styles.content}>
-            <div className={styles.item}>mi hat havayi ban</div>
+            {tree.pages.map((el: any) => (
+              <Link
+                href={getLink(asPath, 2, el.slug)}
+                key={el.slug}
+                className={`${currentSlug === el.slug ? styles.active : ""}  ${
+                  styles.item
+                }`}
+              >
+                {el.title_en}
+              </Link>
+            ))}
           </div>
         </React.Fragment>
       ))}

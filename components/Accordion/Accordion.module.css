@@ -34,7 +34,7 @@ input.input:checked + .item + .content {
   display: block;
 }
 
-.input:checked + .item {
+.active {
   background-color: var(--primary-alpha);
 }
 
