@@ -9,6 +9,7 @@ import Icon from "../Icon/Icon";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import { IIconName } from "../../models/iconName";
 import Accordion from "../Accordion/Accordion";
+import { useRouter } from "next/router";
 
 interface IthemeIcon {
   [key: string]: IIconName;
@@ -21,6 +22,8 @@ const themeIcon: IthemeIcon = {
 
 function Sidebar() {
   const [theme, setTheme] = useState(getTheme);
+  const { asPath, query } = useRouter();
+
   const nextTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
 
   const onToggleTheme = () => {
@@ -44,8 +47,13 @@ function Sidebar() {
             <a className={styles.active}>Basic</a>
           </div>
         </header>
-        <Accordion />
-        <SidebarFooter />
+        <Accordion
+          asPath={asPath}
+          language={query.lang}
+          currentSlug={query.page}
+          defaultOpenedItem={"ratings"}
+        />
+        <SidebarFooter query={query} asPath={asPath} />
       </div>
     </aside>
   );
