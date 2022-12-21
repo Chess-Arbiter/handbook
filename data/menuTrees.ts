@@ -3,14 +3,14 @@ import { PAGE_TYPES } from "../models/page";
 export const menuTrees = [
   {
     id: "ratings",
-    title_ru: "Рейтинги",
-    title_hy: "Վարկանիշներ",
-    title_en: "Ratings",
+    title_ru: "рейтинги",
+    title_hy: "վարկանիշներ",
+    title_en: "ratings",
     pages: [
       {
-        title_ru: "Рейтинг Эло",
-        title_hy: "Էլո վարկանիշ",
-        title_en: "ELO rating",
+        title_ru: "рейтинг эло",
+        title_hy: "էլո վարկանիշ",
+        title_en: "elo rating",
         slug: "rating_elo",
         description_en:
           "Elo rating is a method of calculating the relative strength of players in chess. This rating system was developed by the American professor Arpad Elo.",
@@ -20,9 +20,9 @@ export const menuTrees = [
           "Рейтинг Эло - метод расчёта относительной силы игроков в шахматах. Эту систему рейтингов разработал американский профессор Арпад Эло.",
       },
       {
-        title_ru: "Рейтинговый Перфоманс",
-        title_hy: "Վարկանիշային պերֆոմանս",
-        title_en: "The Tournament Rating (Performance)",
+        title_ru: "рейтинговый перфоманс",
+        title_hy: "վարկանիշային պերֆոմանս",
+        title_en: "the tournament rating (performance)",
         slug: "rating_perfomance",
         description_en:
           "A rating performance is a rating due to which a chess player played in a given tournament.",
@@ -32,9 +32,9 @@ export const menuTrees = [
           "Рейтинговый перфоманс - это рейтинг, в силу которого шахматист сыграл в данном турнире.",
       },
       {
-        title_ru: "Шахматные звания ФИДЕ",
-        title_hy: "ՖԻԴԵ-ի շախմատի կոչումներ",
-        title_en: "Chess Titles",
+        title_ru: "шахматные звания фиде",
+        title_hy: "ֆիդե-ի շախմատի կոչումներ",
+        title_en: "chess titles",
         slug: "chess_role",
         description_en:
           "The International Chess Federation awards three chess titles - FIDE Master (MF), International Master (MM) and International Grandmaster (MG).",
@@ -47,17 +47,16 @@ export const menuTrees = [
     order: 2,
     type: PAGE_TYPES.BASIC,
   },
-
   {
     id: "intro",
-    title_ru: "ВВЕДЕНИЕ",
-    title_en: "INTRODUCTION",
-    title_hy: "ՆԵՐԱԾՈՒԹՅՈՒՆ",
+    title_ru: "введение",
+    title_en: "introduction",
+    title_hy: "ներածություն",
     pages: [
       {
-        title_ru: "ПРЕДИСЛОВИЕ",
-        title_en: "PREFACE",
-        title_hy: "ՆԱԽԱԲԱՆ",
+        title_ru: "предисловие",
+        title_en: "preface",
+        title_hy: "նախաբան",
         slug: "intro",
       },
     ],
@@ -66,40 +65,40 @@ export const menuTrees = [
   },
   {
     id: "basic_rules",
-    title_ru: "ОСНОВНЫЕ ПРАВИЛА ИГРЫ",
-    title_en: "BASIC RULES OF PLAY",
-    title_hy: "ԽԱՂԻ ՀԻՄՆԱԿԱՆ ԿԱՆՈՆՆԵՐԸ",
+    title_ru: "основные правила игры",
+    title_en: "basic rules of play",
+    title_hy: "խաղի հիմնական կանոնները",
     pages: [
       {
-        title_ru: "Статья 1: СУЩНОСТЬ И ЦЕЛИ ИГРЫ В ШАХМАТЫ",
-        title_en: "Article 1: The nature and objectives of the game of chess",
-        title_hy: "Հոդված 1: ՇԱԽՄԱՏԻԷՈՒԹՅՈՒՆԸ և ՆՊԱՏԱԿՆԵՐԸ",
+        title_ru: "статья 1: сущность и цели игры в шахматы",
+        title_en: "article 1: the nature and objectives of the game of chess",
+        title_hy: "հոդված 1: շախմատիէությունը և նպատակները",
         slug: "article1",
       },
       {
-        title_ru: "Статья 2: НАЧАЛЬНАЯ ПОЗИЦИЯ ФИГУР НА ШАХМАТНОЙ ДОСКЕ",
+        title_ru: "статья 2: начальная позиция фигур на шахматной доске",
         title_en:
-          "Article 2: The initial position of the pieces on the chessboard",
+          "article 2: the initial position of the pieces on the chessboard",
         title_hy:
-          "Հոդված 2: ԽԱՂԱՔԱՐԵՐԻ ՍԿԶԲՆԱԿԱՆ ԴԱՍԱՎՈՐՎԱԾՈՒԹՅՈՒՆԸ ՇԱԽՄԱՏԻ ՏԱԽՏԱԿԻ ՎՐԱ",
+          "հոդված 2: խաղաքարերի սկզբնական դասավորվածությունը շախմատի տախտակի վրա",
         slug: "article2",
       },
       {
-        title_ru: "Статья 3: ХОДЫ ФИГУР",
-        title_en: "Article 3: The moves of the pieces",
-        title_hy: "Հոդված 3: ԽԱՂԱՔԱՐԵՐԻ ՔԱՅԼԵՐԸ",
+        title_ru: "статья 3: ходы фигур",
+        title_en: "article 3: the moves of the pieces",
+        title_hy: "հոդված 3: խաղաքարերի քայլերը",
         slug: "article3",
       },
       {
-        title_ru: "Статья 4: ВЫПОЛНЕНИЕ ХОДОВ",
-        title_en: "Article 4: The act of moving the pieces",
-        title_hy: "Հոդված 4: ՔԱՅԼԵՐԻ ԿԱՏԱՐՈՒՄԸ",
+        title_ru: "статья 4: выполнение ходов",
+        title_en: "article 4: the act of moving the pieces",
+        title_hy: "հոդված 4: քայլերի կատարումը",
         slug: "article4",
       },
       {
-        title_ru: "Статья 5: ЗАВЕРШЕНИЕ ПАРТИИ",
-        title_en: "Article 5: The completion of the game",
-        title_hy: "Հոդված 5: ՊԱՐՏԻԱՅԻ ԱՎԱՐՏԸ",
+        title_ru: "статья 5: завершение партии",
+        title_en: "article 5: the completion of the game",
+        title_hy: "հոդված 5: պարտիայի ավարտը",
         slug: "article5",
       },
     ],
@@ -108,14 +107,14 @@ export const menuTrees = [
   },
   {
     id: "additional_indicators",
-    title_ru: "Доп показатели",
-    title_hy: "Լրացուցիչ ցուցանիշներ",
-    title_en: "Additional indicators",
+    title_ru: "доп показатели",
+    title_hy: "լրացուցիչ ցուցանիշներ",
+    title_en: "additional indicators",
     pages: [
       {
-        title_ru: "Армагеддон",
-        title_hy: "Արմագեդդոն",
-        title_en: "Armageddon",
+        title_ru: "армагеддон",
+        title_hy: "արմագեդդոն",
+        title_en: "armageddon",
         description_en:
           "Armageddon is the name of a special chess game that is played if the previous tie-breaks have not revealed a winner.",
         description_hy:
@@ -125,9 +124,9 @@ export const menuTrees = [
         slug: "armageddon",
       },
       {
-        title_ru: "Бухгольц",
-        title_hy: "Բուհգոլց",
-        title_en: "Buchholz system",
+        title_ru: "бухгольц",
+        title_hy: "բուհգոլց",
+        title_en: "buchholz system",
         description_en:
           "Buchholz coefficient - an indicator that helps determine places in chess tournaments",
         description_hy:
@@ -137,9 +136,9 @@ export const menuTrees = [
         slug: "bugolz",
       },
       {
-        title_ru: "Зонеберн-Бергер",
-        title_hy: "Զոնեբոռն-Բերգեր",
-        title_en: "Zonneborn-Berger",
+        title_ru: "зонеберн-бергер",
+        title_hy: "զոնեբոռն-բերգեր",
+        title_en: "zonneborn-berger",
         description_en:
           "Berger&#39;s coefficient is a way of determining places in a competition among participants who have scored an equal number of points. It is mainly used in round robin tournaments.",
         description_hy:
@@ -149,9 +148,9 @@ export const menuTrees = [
         slug: "berger",
       },
       {
-        title_ru: "Нарастающий итог или прогресс",
-        title_hy: "Պրոգրես",
-        title_en: "Progress",
+        title_ru: "нарастающий итог или прогресс",
+        title_hy: "պրոգրես",
+        title_en: "progress",
         description_en:
           "Progress, or cumulative total, is the sum of the participant&#39;s points after each round.",
         description_hy:
@@ -161,18 +160,18 @@ export const menuTrees = [
         slug: "progress",
       },
       {
-        title_ru: "Остальное",
-        title_hy: "Մնացածը",
-        title_en: "Other",
+        title_ru: "остальное",
+        title_hy: "մնացածը",
+        title_en: "other",
         description_en: "",
         description_hy: "",
         description_ru: "",
         slug: "others",
       },
       {
-        title_ru: "Тай-брейк",
-        title_hy: "Թայ-բրեյկ",
-        title_en: "Tie-break",
+        title_ru: "тай-брейк",
+        title_hy: "թայ-բրեյկ",
+        title_en: "tie-break",
         description_en:
           "Tie-break is a special shortened game that allows you to determine the winner if the score is tied",
         description_hy:
@@ -187,14 +186,14 @@ export const menuTrees = [
   },
   {
     id: "tournament_systems",
-    title_ru: "Турнирные системы",
-    title_en: "Tournament systems",
-    title_hy: "Մրցաշարային համակարգեր",
+    title_ru: "турнирные системы",
+    title_en: "tournament systems",
+    title_hy: "մրցաշարային համակարգեր",
     pages: [
       {
-        title_ru: "Круговая система",
-        title_en: "Round robin",
-        title_hy: "Շրջանաձև մրցակարգ",
+        title_ru: "круговая система",
+        title_en: "round robin",
+        title_hy: "շրջանաձև մրցակարգ",
         description_en:
           "Round robin - a system of drawing in which each participant of the tournament plays with everyone during the round.",
         description_hy:
@@ -204,9 +203,9 @@ export const menuTrees = [
         slug: "round_system",
       },
       {
-        title_ru: "Олимпийская система(нокаут)",
-        title_en: "Knockout system",
-        title_hy: "Օլիմպիական համակարգ(նոկաուտ)",
+        title_ru: "олимпийская система(нокаут)",
+        title_en: "knockout system",
+        title_hy: "օլիմպիական համակարգ(նոկաուտ)",
         description_en:
           "The knockout system (Olympic system) is a system for holding chess tournaments, it is a playoff version, built taking into account the peculiarities of chess.",
         description_hy:
@@ -216,9 +215,9 @@ export const menuTrees = [
         slug: "olympic_system",
       },
       {
-        title_ru: "Система матчей",
-        title_en: "Match",
-        title_hy: "Մատչեր",
+        title_ru: "система матчей",
+        title_en: "match",
+        title_hy: "մատչեր",
         description_en:
           "A match is one of the forms of chess competition. It is a competition between two opponents or teams.",
         description_hy:
@@ -228,9 +227,9 @@ export const menuTrees = [
         slug: "match_system",
       },
       {
-        title_ru: "Схевингенская система",
-        title_en: "The Scheveningen system",
-        title_hy: "Սխևինգենյան համակարգ",
+        title_ru: "схевингенская система",
+        title_en: "the scheveningen system",
+        title_hy: "սխևինգենյան համակարգ",
         description_en:
           "Scheveningen system - a system of holding chess competitions in which each member of one group of participants plays with all members of the other group.",
         description_hy:
@@ -240,9 +239,9 @@ export const menuTrees = [
         slug: "skh_system",
       },
       {
-        title_ru: "Швейцарская система",
-        title_en: "Swiss system",
-        title_hy: "Շվեյցարական համակարգ",
+        title_ru: "швейцарская система",
+        title_en: "swiss system",
+        title_hy: "շվեյցարական համակարգ",
         description_en:
           "The Swiss system is a system of holding chess tournaments, where opponents with the same or similar number of points play in each round.",
         description_hy:
@@ -257,14 +256,14 @@ export const menuTrees = [
   },
   {
     id: "glossary",
-    title_en: "Glossary",
-    title_ru: "СЛОВАРЬ",
-    title_hy: "ԲԱՌԱՐԱՆ",
+    title_en: "glossary",
+    title_ru: "словарь",
+    title_hy: "բառարան",
     pages: [
       {
-        title_ru: "СЛОВАРЬ ТЕРМИНОВ, ИСПОЛЬЗУЕМЫХ В ПРАВИЛАХ ИГРЫ В ШАХМАТЫ",
-        title_en: "Glossary of terms in the Laws of Chess",
-        title_hy: "ՇԱԽՄԱՏԻ ԿԱՆՈՆՆԵՐԻ ՏԵՐՄԻՆԱԲԱՆԱԿԱՆ ԲԱՌԱՐԱՆ",
+        title_ru: "словарь терминов, используемых в правилах игры в шахматы",
+        title_en: "glossary of terms in the laws of chess",
+        title_hy: "շախմատի կանոնների տերմինաբանական բառարան",
         slug: "voc",
       },
     ],
@@ -273,50 +272,50 @@ export const menuTrees = [
   },
   {
     id: "competition_rules",
-    title_ru: "ПРАВИЛА СОРЕВНОВАНИЙ",
-    title_en: "COMPETITION RULES",
-    title_hy: "ՄՐՑԱՇԱՐԵՐԻ ԿԱՆՈՆՆԵՐ",
+    title_ru: "правила соревнований",
+    title_en: "competition rules",
+    title_hy: "մրցաշարերի կանոններ",
     pages: [
       {
-        title_ru: "Статья 6: ШАХМАТНЫЕ ЧАСЫ",
-        title_en: "Article 6: The chessclock",
-        title_hy: "Հոդված 6: ՇԱԽՄԱՏԻ ԺԱՄԵՐ",
+        title_ru: "статья 6: шахматные часы",
+        title_en: "article 6: the chessclock",
+        title_hy: "հոդված 6: շախմատի ժամեր",
         slug: "article6",
       },
       {
-        title_ru: "Статья 7: НАРУШЕНИЯ",
-        title_en: "Article 7: Irregularities",
-        title_hy: "Հոդված 7: ԽԱԽՏՈՒՄՆԵՐ",
+        title_ru: "статья 7: нарушения",
+        title_en: "article 7: irregularities",
+        title_hy: "հոդված 7: խախտումներ",
         slug: "article7",
       },
       {
-        title_ru: "Статья 8: ЗАПИСЬ ХОДОВ",
-        title_en: "Article 8: The recording of the moves",
-        title_hy: "Հոդված 8: ՔԱՅԼԵՐԻ ԳՐԱՆՑՈՒՄԸ",
+        title_ru: "статья 8: запись ходов",
+        title_en: "article 8: the recording of the moves",
+        title_hy: "հոդված 8: քայլերի գրանցումը",
         slug: "article8",
       },
       {
-        title_ru: "Статья 9: НИЧЬЯ",
-        title_en: "Article 9: The drawn game",
-        title_hy: "Հոդված 9: ՈՉ-ՈՔԻ",
+        title_ru: "статья 9: ничья",
+        title_en: "article 9: the drawn game",
+        title_hy: "հոդված 9: ոչ-ոքի",
         slug: "article9",
       },
       {
-        title_ru: "Статья 10: ОЧКИ",
-        title_en: "Article 10: Points",
-        title_hy: "Հոդված 10: ՄԻԱՎՈՐՆԵՐԻ ՀԱՇՎԱՐԿԸ",
+        title_ru: "статья 10: очки",
+        title_en: "article 10: points",
+        title_hy: "հոդված 10: միավորների հաշվարկը",
         slug: "article10",
       },
       {
-        title_ru: "Статья 11: ПОВЕДЕНИЕ ИГРОКОВ",
-        title_en: "Article 11: The conduct of the players",
-        title_hy: "Հոդված 11: ԽԱՂԱՑՈՂՆԵՐԻ ՊԱՀՎԱԾՔԸ",
+        title_ru: "статья 11: поведение игроков",
+        title_en: "article 11: the conduct of the players",
+        title_hy: "հոդված 11: խաղացողների պահվածքը",
         slug: "article11",
       },
       {
-        title_ru: "Статья 12: РОЛЬ АРБИТРА (см. Предисловие)",
-        title_en: "Article 12: The role of the arbiter (see Preface)",
-        title_hy: "Հոդված 12: ՄՐՑԱՎԱՐԻ ԴԵՐԸ (տես՝ ՆԱԽԱԲԱՆ)",
+        title_ru: "статья 12: роль арбитра (см. предисловие)",
+        title_en: "article 12: the role of the arbiter (see preface)",
+        title_hy: "հոդված 12: մրցավարի դերը (տես՝ նախաբան)",
         slug: "article12",
       },
     ],
@@ -325,27 +324,27 @@ export const menuTrees = [
   },
   {
     id: "guidelines",
-    title_ru: "Рекомендации",
-    title_en: "Guidelines:",
-    title_hy: "Խորհուրդներ",
+    title_ru: "рекомендации",
+    title_en: "guidelines:",
+    title_hy: "խորհուրդներ",
     pages: [
       {
-        title_ru: "I. ОТЛОЖЕННЫЕ ПАРТИИ",
-        title_en: "I. Adjourned games",
-        title_hy: "I. ՀԵՏԱՁԳՎԱԾ ՊԱՐՏԻԱՆԵՐ",
+        title_ru: "i. отложенные партии",
+        title_en: "i. adjourned games",
+        title_hy: "i. հետաձգված պարտիաներ",
         slug: "rec1",
       },
       {
-        title_ru: "II. ПРАВИЛА ИГРЫ В ШАХМАТЫ 960",
-        title_en: "II. Chess960 rules",
-        title_hy: "II. ՇԱԽՄԱՏ 960 ԽԱՂԻ ԿԱՆՈՆՆԵՐ",
+        title_ru: "ii. правила игры в шахматы 960",
+        title_en: "ii. chess960 rules",
+        title_hy: "ii. շախմատ 960 խաղի կանոններ",
         slug: "rec2",
       },
       {
         title_ru:
-          "III. ПАРТИИ БЕЗ ДОБАВЛЕНИЯ ВРЕМЕНИ, в том числе  БЫСТРАЯ ИГРА ДО КОНЦА ПАРТИИ",
-        title_en: "III. Games without increment including Quickplay Finishes",
-        title_hy: "III ԱՐԱԳ ԱՎԱՐՏ",
+          "iii. партии без добавления времени, в том числе  быстрая игра до конца партии",
+        title_en: "iii. games without increment including quickplay finishes",
+        title_hy: "iii արագ ավարտ",
         slug: "rec3",
       },
     ],
@@ -354,35 +353,35 @@ export const menuTrees = [
   },
   {
     id: "appendices",
-    title_ru: "ПРИЛОЖЕНИЯ",
-    title_en: "Appendices:",
-    title_hy: "ՀԱՎԵԼՎԱԾՆԵՐ",
+    title_ru: "приложения",
+    title_en: "appendices:",
+    title_hy: "հավելվածներ",
     pages: [
       {
-        title_ru: "Приложение А. БЫСТРЫЕ ШАХМАТЫ",
-        title_en: "Application А. Rapid chess",
-        title_hy: "Հավելված А. ԱՐԱԳ ՇԱԽՄԱՏ",
+        title_ru: "приложение а. быстрые шахматы",
+        title_en: "application а. rapid chess",
+        title_hy: "հավելված а. արագ շախմատ",
         slug: "applicationa",
       },
       {
-        title_ru: "Приложение В. БЛИЦ",
-        title_en: "Application В. Blitz",
-        title_hy: "Հավելված В. ԿԱՅԾԱԿՆԱՅԻՆ ԽԱՂ (ԲԼԻՑ)",
+        title_ru: "приложение в. блиц",
+        title_en: "application в. blitz",
+        title_hy: "հավելված в. կայծակնային խաղ (բլից)",
         slug: "applicationb",
       },
       {
-        title_ru: "Приложение С. АЛГЕБРАИЧЕСКАЯ НОТАЦИЯ",
-        title_en: "Application С. Algebraic notation",
-        title_hy: "Հավելված С. ՀԱՆՐԱՀԱՇՎԱԿԱԿ ՆՇԱԳՐՈՒԹՅՈՒՆ",
+        title_ru: "приложение с. алгебраическая нотация",
+        title_en: "application с. algebraic notation",
+        title_hy: "հավելված с. հանրահաշվակակ նշագրություն",
         slug: "applicationc",
       },
       {
         title_ru:
-          "Приложение D. ПРАВИЛА ИГРЫ ДЛЯ СЛЕПЫХ И ИГРОКОВ С ОСЛАБЛЕННЫМ ЗРЕНИЕМ",
+          "приложение d. правила игры для слепых и игроков с ослабленным зрением",
         title_en:
-          "Application D. Rules for play with blind and visually disabled players",
+          "application d. rules for play with blind and visually disabled players",
         title_hy:
-          "Հավելված D. ԿՈՒՅՐ և ԹՈՒՅԼ ՏԵՍՈՂՈՒԹՅՈՒՆ ՈՒՆԵՑՈՂ ՇԱԽՄԱՏԻՍՏՆԵՐԻ ՀԵՏ ԽԱՂԱԼՈՒ ԿԱՆՈՆՆԵՐԸ",
+          "հավելված d. կույր և թույլ տեսողություն ունեցող շախմատիստների հետ խաղալու կանոնները",
         slug: "applicationd",
       },
     ],
