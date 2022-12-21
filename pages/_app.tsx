@@ -1,5 +1,4 @@
 import type { AppProps } from "next/app";
-import Sidebar from "../components/Sidebar/Sidebar";
 import "../styles/theme.css";
 import "../styles/globals.css";
 import { useEffect } from "react";
@@ -11,12 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
       guesTheme();
     }
   }, []);
-  return (
-    <div className="wrapper">
-      <Sidebar />
-      <main>
-        <Component {...pageProps} />
-      </main>
-    </div>
-  );
+
+  return <Component {...pageProps} />;
 }

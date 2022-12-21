@@ -1,3 +1,5 @@
+import { PAGE_TYPES } from "../models/page";
+
 export const menuTrees = [
   {
     id: "ratings",
@@ -43,7 +45,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: 1,
+    type: PAGE_TYPES.BASIC,
   },
 
   {
@@ -60,7 +62,7 @@ export const menuTrees = [
       },
     ],
     order: 1,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
   {
     id: "basic_rules",
@@ -102,7 +104,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
   {
     id: "additional_indicators",
@@ -181,7 +183,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: 1,
+    type: PAGE_TYPES.BASIC,
   },
   {
     id: "tournament_systems",
@@ -251,20 +253,23 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: 1,
+    type: PAGE_TYPES.BASIC,
   },
   {
     id: "glossary",
+    title_en: "Glossary",
+    title_ru: "СЛОВАРЬ",
+    title_hy: "ԲԱՌԱՐԱՆ",
     pages: [
       {
         title_ru: "СЛОВАРЬ ТЕРМИНОВ, ИСПОЛЬЗУЕМЫХ В ПРАВИЛАХ ИГРЫ В ШАХМАТЫ",
         title_en: "Glossary of terms in the Laws of Chess",
-        title_hy: "ՇԱԽՄԱՏԻ ԿԱՆՈՆՆԵՐԻ ՏԵՐՄԻՆԱԲԱՆԱԿԱՆ ԲԱՐԱՌԱՆ",
+        title_hy: "ՇԱԽՄԱՏԻ ԿԱՆՈՆՆԵՐԻ ՏԵՐՄԻՆԱԲԱՆԱԿԱՆ ԲԱՌԱՐԱՆ",
         slug: "voc",
       },
     ],
     order: 5,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
   {
     id: "competition_rules",
@@ -316,7 +321,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
   {
     id: "guidelines",
@@ -345,7 +350,7 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
   {
     id: "appendices",
@@ -382,6 +387,6 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: 2,
+    type: PAGE_TYPES.LAWS,
   },
 ];
