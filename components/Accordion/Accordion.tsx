@@ -46,7 +46,7 @@ export default function Accordion({
                     currentSlug === el.slug ? styles.active : ""
                   }  ${styles.item}`}
                 >
-                  {el.title_en}
+                  {el[`title_${language}`]}
                 </Link>
               ))}
             </div>

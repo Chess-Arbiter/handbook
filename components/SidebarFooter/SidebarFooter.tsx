@@ -27,10 +27,19 @@ export default function SidebarFooter({ query, asPath }: any) {
           </Link>
         ))}
       </div>
-      <a className={styles.fb_icon}>
+      <a
+        className={styles.fb_icon}
+        href={`https://www.facebook.com/chessarbiter.info.${query.lang}`}
+        target="_blank"
+        rel="noreferrer"
+      >
         <Icon name="fb" />
       </a>
-      <a>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.chessarbiter&pli=1"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Icon name="mobile" />
       </a>
     </footer>
