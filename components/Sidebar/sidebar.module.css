@@ -5,6 +5,10 @@
   width: 20rem;
   height: 100%;
 }
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Sidebar header */
 .sidebar__header {
   padding: 1rem 1.25rem;

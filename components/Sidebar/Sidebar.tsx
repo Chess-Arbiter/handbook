@@ -10,6 +10,8 @@ import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import { IIconName } from "../../models/iconName";
 import Accordion from "../Accordion/Accordion";
 import { useRouter } from "next/router";
+import { sideBarTabs } from "../../constants/sidebar";
+import Link from "next/link";
 
 interface IthemeIcon {
   [key: string]: IIconName;
@@ -20,7 +22,7 @@ const themeIcon: IthemeIcon = {
   light: "light-mode",
 };
 
-function Sidebar() {
+function Sidebar({ currentPageParent }: { currentPageParent: string }) {
   const [theme, setTheme] = useState(getTheme);
   const { asPath, query } = useRouter();
 
@@ -43,15 +45,23 @@ function Sidebar() {
             </button>
           </div>
           <div className={styles.sidebar_tabs}>
-            <a>Laws</a>
-            <a className={styles.active}>Basic</a>
+            {sideBarTabs.map((tab: any) => (
+              <Link
+                className={`${tab.id === query.prefix ? styles.active : ""}`}
+                key={tab.path}
+                href={`/${query.lang}/${tab.path}`}
+              >
+                {tab[`title_${query.lang}`]}
+              </Link>
+            ))}
           </div>
         </header>
         <Accordion
           asPath={asPath}
           language={query.lang}
           currentSlug={query.page}
-          defaultOpenedItem={"ratings"}
+          defaultOpenedItem={currentPageParent}
+          currentTab={query.prefix}
         />
         <SidebarFooter query={query} asPath={asPath} />
       </div>

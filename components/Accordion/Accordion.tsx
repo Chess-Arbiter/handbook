@@ -10,45 +10,49 @@ export default function Accordion({
   currentSlug,
   language,
   asPath,
+  currentTab,
 }: {
   defaultOpenedItem: string;
   currentSlug: any;
   language: any;
   asPath: string;
+  currentTab: any;
 }) {
-  const basic = menuTrees.filter((el: any) => el.type === 2);
+  const basic = menuTrees.filter((el: any) => el.type === currentTab);
 
   return (
-    <nav className={styles.navigation}>
-      {basic.map((tree: any) => (
-        <React.Fragment key={tree.id}>
-          <input
-            id={tree.id}
-            type="radio"
-            className={styles.input}
-            name="sidebar"
-            value={tree.id}
-            defaultChecked={tree.id === defaultOpenedItem}
-          />
-          <label htmlFor={tree.id} className={styles.item}>
-            {tree[`title_${language}`]}
-            <Icon name="dropdown" />
-          </label>
-          <div className={styles.content}>
-            {tree.pages.map((el: any) => (
-              <Link
-                href={getLink(asPath, 2, el.slug)}
-                key={el.slug}
-                className={`${currentSlug === el.slug ? styles.active : ""}  ${
-                  styles.item
-                }`}
-              >
-                {el.title_en}
-              </Link>
-            ))}
-          </div>
-        </React.Fragment>
-      ))}
-    </nav>
+    <div className={styles.navigation}>
+      <nav>
+        {basic.map((tree: any) => (
+          <React.Fragment key={tree.id}>
+            <input
+              id={tree.id}
+              type="checkbox"
+              className={styles.input}
+              name="sidebar"
+              value={tree.id}
+              defaultChecked={tree.id === defaultOpenedItem}
+            />
+            <label htmlFor={tree.id} className={styles.item}>
+              {tree[`title_${language}`]}
+              <Icon name="dropdown" />
+            </label>
+            <div className={styles.content}>
+              {tree.pages.map((el: any) => (
+                <Link
+                  href={getLink(asPath, 2, el.slug)}
+                  key={el.slug}
+                  className={`${
+                    currentSlug === el.slug ? styles.active : ""
+                  }  ${styles.item}`}
+                >
+                  {el.title_en}
+                </Link>
+              ))}
+            </div>
+          </React.Fragment>
+        ))}
+      </nav>
+    </div>
   );
 }
