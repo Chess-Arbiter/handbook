@@ -45,7 +45,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
   {
     id: "intro",
@@ -182,7 +182,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
   {
     id: "tournament_systems",
@@ -252,7 +252,7 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
   {
     id: "glossary",
