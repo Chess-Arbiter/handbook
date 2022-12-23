@@ -1,5 +1,5 @@
 import Icon from "../Icon/Icon";
-import LanguagesSelect from "../LanguagesSelect/LanguagesSelect copy";
+import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import styles from "./SidebarFooter.module.css";
 
 export default function SidebarFooter({ query, asPath }: any) {
