@@ -6,7 +6,7 @@ import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
 import { useEffect, useState } from "react";
 import Icon from "../Icon/Icon";
-import LanguagesSelect from "../LanguagesSelect/LanguagesSelect copy";
+import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import usePrevious from "../../hooks/usePrevious";
 
 function Sidebar({
