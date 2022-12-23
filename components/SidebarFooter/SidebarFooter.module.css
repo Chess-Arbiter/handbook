@@ -7,6 +7,10 @@
   border-radius: 0.5rem;
 }
 
+.footer a {
+  color: inherit;
+}
+
 .footer svg {
   width: 1.25rem;
   height: 1.25rem;
