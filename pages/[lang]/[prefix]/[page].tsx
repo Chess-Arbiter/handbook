@@ -15,7 +15,8 @@ export default function PageContent({ page }: { page: Page }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <MainLayout currentPageParent={page.parent}>
-        <div dangerouslySetInnerHTML={{ __html: page.content }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: page.content }} /> */}
+        <Data />
       </MainLayout>
     </>
   );
@@ -23,16 +24,16 @@ export default function PageContent({ page }: { page: Page }) {
 
 export async function getServerSideProps({ params }: any) {
   try {
-    const pageDoc = await getPage(params.page);
-    const page: Page = {
-      title: pageDoc?.[`title_${params.lang}`] || "",
-      description: pageDoc?.[`description_${params.lang}`] || "",
-      content: pageDoc?.[`content_${params.lang}`] || "",
-      parent: pageDoc.parent || "",
-    };
+    // const pageDoc = await getPage(params.page);
+    // const page: Page = {
+    //   title: pageDoc?.[`title_${params.lang}`] || "",
+    //   description: pageDoc?.[`description_${params.lang}`] || "",
+    //   content: pageDoc?.[`content_${params.lang}`] || "",
+    //   parent: pageDoc.parent || "",
+    // };
 
     return {
-      props: { page: page },
+      props: { page: {} },
     };
   } catch {
     return {

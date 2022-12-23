@@ -9,4 +9,6 @@ export type IIconName =
   | "mobile"
   | LANGUAGES.EN
   | LANGUAGES.RU
-  | LANGUAGES.HY;
+  | LANGUAGES.HY
+  | "menu"
+  | "close";

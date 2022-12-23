@@ -1,0 +1,11 @@
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.branding img {
+  width: 3rem;
+  height: auto;
+  object-fit: contain;
+}

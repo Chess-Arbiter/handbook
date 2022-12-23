@@ -9,7 +9,7 @@
   --gray: #727891;
   --gray-alpha: #72789133;
   --primary-alpha: #628ce17d; 
-  --bg-color: var(var(--white));
+  --bg-color: var(--white);
   --text-color: var(--info);
   --border-color: var(--gray);
 }
