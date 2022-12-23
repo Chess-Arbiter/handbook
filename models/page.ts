@@ -3,6 +3,7 @@ export interface Page {
   content: string;
   description: string;
   parent: string;
+  slug: string
 }
 
 export enum PAGE_TYPES {

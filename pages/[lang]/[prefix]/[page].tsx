@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AdditionalContents from "../../../components/AdditionalContents/AdditionalContents";
 // import Data from "../../../constants/data";
 import MainLayout from "../../../layouts/MainLayout";
 import { Page } from "../../../models/page";
@@ -16,6 +17,7 @@ export default function PageContent({ page }: { page: Page }) {
       </Head>
       <MainLayout currentPageParent={page.parent}>
         <div dangerouslySetInnerHTML={{ __html: page.content }} />
+        <AdditionalContents page={page.slug} />
       </MainLayout>
     </>
   );
@@ -29,6 +31,7 @@ export async function getServerSideProps({ params }: any) {
       description: pageDoc?.[`description_${params.lang}`] || "",
       content: pageDoc?.[`content_${params.lang}`] || "",
       parent: pageDoc.parent || "",
+      slug: pageDoc?.slug || "",
     };
 
     return {
