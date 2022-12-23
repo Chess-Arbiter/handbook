@@ -32,10 +32,20 @@
 
 .mobile_header {
   display: flex;
+  align-items: center;
   padding: 1rem;
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--border-color);
-  gap: 0.75rem;
+  gap: 1rem;
+}
+
+.mobile_header a {
+  color: inherit;
+}
+
+:global(.menu_open) .mobile_header {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .mobile_menu_wrapper {
@@ -50,6 +60,24 @@
   color: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.menu_button svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.mobile_header_right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.mobile_header_right svg {
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 /* Mobile end */

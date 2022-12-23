@@ -13,7 +13,6 @@ import NavbarDesktop from "./Navbar.desktop";
 function Navbar({ currentPageParent }: { currentPageParent: string }) {
   const { asPath, query } = useRouter();
   const isMobile = useMediaQuery("(max-width:1024px)");
-  console.log(isMobile);
 
   return (
     <>

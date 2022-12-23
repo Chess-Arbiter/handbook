@@ -15,3 +15,11 @@
 .lang ~ .lang {
   visibility: hidden;
 }
+
+/* Mobile start */
+@media(max-width: 1024px) {
+  .lang_wrapper {
+    flex-direction: row-reverse;
+  }
+}
+/* Mobile end */
