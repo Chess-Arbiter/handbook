@@ -1,14 +1,13 @@
 import styles from "./sidebar.module.css";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
-import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import Accordion from "../Accordion/Accordion";
-import { useRouter } from "next/router";
 import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
 import { useEffect, useState } from "react";
 import Icon from "../Icon/Icon";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect copy";
+import usePrevious from "../../hooks/usePrevious";
 
 function Sidebar({
   currentPageParent,
@@ -21,13 +20,17 @@ function Sidebar({
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuIcon = isMenuOpen ? "close" : "menu";
+  const prevPrefix = usePrevious(query.prefix);
+
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
 
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [query.page]);
+    if (prevPrefix === query.prefix) {
+      setIsMenuOpen(false);
+    }
+  }, [query.page, query.prefix, prevPrefix]);
 
   return (
     <div
