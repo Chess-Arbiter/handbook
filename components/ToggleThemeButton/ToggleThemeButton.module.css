@@ -1,0 +1,8 @@
+.button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}

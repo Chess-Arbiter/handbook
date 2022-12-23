@@ -15,20 +15,3 @@
 .fb_icon {
   margin-left: auto;
 }
-
-.lang_wrapper {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.lang_wrapper:hover .lang ~.lang{
-  visibility: visible;
-}
-
-.lang svg {
-  border-radius: 50%;
-}
-
-.lang ~ .lang {
-  visibility: hidden;
-}

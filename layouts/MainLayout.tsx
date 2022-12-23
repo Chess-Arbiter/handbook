@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function MainLayout({
   children,
@@ -10,7 +10,7 @@ export default function MainLayout({
 }) {
   return (
     <div className="wrapper">
-      <Sidebar currentPageParent={currentPageParent} />
+      <Navbar currentPageParent={currentPageParent} />
       <main>{children}</main>
     </div>
   );

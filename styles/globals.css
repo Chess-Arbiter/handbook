@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+[data-theme='dark'] {
+  color-scheme: dark;
+}
 
 html,
 body {
@@ -67,16 +70,6 @@ ul {
 
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
-
 :root[data-theme='light'] .sidebar__footer {
   box-shadow: 0.25rem 0.25rem 0.5rem var(--gray);
 }
@@ -84,3 +77,18 @@ ul {
 :root[data-theme='dark']  .sidebar__footer {
   background-color: var(--gray);
 }
+
+/* Mobile start */
+  @media(max-width: 1024px) {
+    .wrapper {
+      display: block;
+    }
+    main {
+      max-width: 100vw;
+    }
+    :is(.menu_open) + main {
+      max-height: 0;
+      overflow: hidden;
+    }
+  }
+/* Mobile end */
