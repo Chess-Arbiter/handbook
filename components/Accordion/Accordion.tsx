@@ -18,12 +18,12 @@ export default function Accordion({
   asPath: string;
   currentTab: any;
 }) {
-  const basic = menuTrees.filter((el: any) => el.type === currentTab);
+  const MORE = menuTrees.filter((el: any) => el.type === currentTab);
 
   return (
     <div className={styles.navigation}>
       <nav>
-        {basic.map((tree: any) => (
+        {MORE.map((tree: any) => (
           <React.Fragment key={tree.id}>
             <input
               id={tree.id}

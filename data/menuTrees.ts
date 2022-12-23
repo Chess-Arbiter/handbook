@@ -45,7 +45,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
   {
     id: "intro",
@@ -133,10 +133,10 @@ export const menuTrees = [
           "Բուխհոլցի գործակիցը ցուցանիշ է, որը շախմատային մրցաշարերում հավասար միավորներ վաստակելու դեպքում օգնում է դասակարգել շախմատիստներին",
         description_ru:
           "Коэффициент Бухгольца - показатель, помогающий определению мест в шахматных турнирах",
-        slug: "bugolz",
+        slug: "buchholz",
       },
       {
-        title_ru: "зонеберн-бергер",
+        title_ru: "зонеборн-бергер",
         title_hy: "զոնեբոռն-բերգեր",
         title_en: "zonneborn-berger",
         description_en:
@@ -160,15 +160,6 @@ export const menuTrees = [
         slug: "progress",
       },
       {
-        title_ru: "остальное",
-        title_hy: "մնացածը",
-        title_en: "other",
-        description_en: "",
-        description_hy: "",
-        description_ru: "",
-        slug: "others",
-      },
-      {
         title_ru: "тай-брейк",
         title_hy: "թայ-բրեյկ",
         title_en: "tie-break",
@@ -180,9 +171,18 @@ export const menuTrees = [
           "Тай-брейк — специальная укороченная партия, которая позволяет выявить победителя при ничейном счёте",
         slug: "tie_break",
       },
+      {
+        title_ru: "остальное",
+        title_hy: "մնացածը",
+        title_en: "other",
+        description_en: "",
+        description_hy: "",
+        description_ru: "",
+        slug: "others",
+      },
     ],
     order: 3,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
   {
     id: "tournament_systems",
@@ -252,24 +252,9 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: PAGE_TYPES.BASIC,
+    type: PAGE_TYPES.MORE,
   },
-  {
-    id: "glossary",
-    title_en: "glossary",
-    title_ru: "словарь",
-    title_hy: "բառարան",
-    pages: [
-      {
-        title_ru: "словарь терминов, используемых в правилах игры в шахматы",
-        title_en: "glossary of terms in the laws of chess",
-        title_hy: "շախմատի կանոնների տերմինաբանական բառարան",
-        slug: "voc",
-      },
-    ],
-    order: 5,
-    type: PAGE_TYPES.LAWS,
-  },
+
   {
     id: "competition_rules",
     title_ru: "правила соревнований",
@@ -323,35 +308,6 @@ export const menuTrees = [
     type: PAGE_TYPES.LAWS,
   },
   {
-    id: "guidelines",
-    title_ru: "рекомендации",
-    title_en: "guidelines:",
-    title_hy: "խորհուրդներ",
-    pages: [
-      {
-        title_ru: "i. отложенные партии",
-        title_en: "i. adjourned games",
-        title_hy: "i. հետաձգված պարտիաներ",
-        slug: "rec1",
-      },
-      {
-        title_ru: "ii. правила игры в шахматы 960",
-        title_en: "ii. chess960 rules",
-        title_hy: "ii. շախմատ 960 խաղի կանոններ",
-        slug: "rec2",
-      },
-      {
-        title_ru:
-          "iii. партии без добавления времени, в том числе  быстрая игра до конца партии",
-        title_en: "iii. games without increment including quickplay finishes",
-        title_hy: "iii արագ ավարտ",
-        slug: "rec3",
-      },
-    ],
-    order: 4,
-    type: PAGE_TYPES.LAWS,
-  },
-  {
     id: "appendices",
     title_ru: "приложения",
     title_en: "appendices:",
@@ -386,6 +342,51 @@ export const menuTrees = [
       },
     ],
     order: 3,
+    type: PAGE_TYPES.LAWS,
+  },
+  {
+    id: "guidelines",
+    title_ru: "рекомендации",
+    title_en: "guidelines:",
+    title_hy: "խորհուրդներ",
+    pages: [
+      {
+        title_ru: "i. отложенные партии",
+        title_en: "i. adjourned games",
+        title_hy: "i. հետաձգված պարտիաներ",
+        slug: "rec1",
+      },
+      {
+        title_ru: "ii. правила игры в шахматы 960",
+        title_en: "ii. chess960 rules",
+        title_hy: "ii. շախմատ 960 խաղի կանոններ",
+        slug: "rec2",
+      },
+      {
+        title_ru:
+          "iii. партии без добавления времени, в том числе  быстрая игра до конца партии",
+        title_en: "iii. games without increment including quickplay finishes",
+        title_hy: "iii արագ ավարտ",
+        slug: "rec3",
+      },
+    ],
+    order: 4,
+    type: PAGE_TYPES.LAWS,
+  },
+  {
+    id: "glossary",
+    title_en: "glossary",
+    title_ru: "словарь",
+    title_hy: "բառարան",
+    pages: [
+      {
+        title_ru: "словарь терминов, используемых в правилах игры в шахматы",
+        title_en: "glossary of terms in the laws of chess",
+        title_hy: "շախմատի կանոնների տերմինաբանական բառարան",
+        slug: "voc",
+      },
+    ],
+    order: 5,
     type: PAGE_TYPES.LAWS,
   },
 ];

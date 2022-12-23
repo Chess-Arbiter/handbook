@@ -6,7 +6,7 @@ export interface Page {
 }
 
 export enum PAGE_TYPES {
-  BASIC = "basic",
+  MORE = "more",
   LAWS = "laws",
 }
 

@@ -15,9 +15,9 @@ export const sideBarTabs: TAB[] = [
     title_en: "More",
     title_ru: "Больше",
     title_hy: "Ավելին",
-    id: PAGE_TYPES.BASIC,
-    path: `${PAGE_TYPES.BASIC}/${
-      menuTrees.filter(({ type }) => type === PAGE_TYPES.BASIC)[0].pages[0].slug
+    id: PAGE_TYPES.MORE,
+    path: `${PAGE_TYPES.MORE}/${
+      menuTrees.filter(({ type }) => type === PAGE_TYPES.MORE)[0].pages[0].slug
     }`,
   },
 ];
