@@ -1,11 +1,12 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import AdditionalContents from "../../../components/AdditionalContents/AdditionalContents";
 // import Data from "../../../constants/data";
 import MainLayout from "../../../layouts/MainLayout";
-import { Page } from "../../../models/page";
+import { IPage } from "../../../models/page";
 import getPage from "../../../utils/getPage";
 
-export default function PageContent({ page }: { page: Page }) {
+export default function PageContent({ page }: { page: IPage }) {
   return (
     <>
       <Head>
@@ -26,7 +27,7 @@ export default function PageContent({ page }: { page: Page }) {
 export async function getServerSideProps({ params }: any) {
   try {
     const pageDoc = await getPage(params.page);
-    const page: Page = {
+    const page: IPage = {
       title: pageDoc?.[`title_${params.lang}`] || "",
       description: pageDoc?.[`description_${params.lang}`] || "",
       content: pageDoc?.[`content_${params.lang}`] || "",

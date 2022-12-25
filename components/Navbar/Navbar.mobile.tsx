@@ -1,5 +1,4 @@
 import styles from "./sidebar.module.css";
-import withClientSideComponent from "../../hoc/withClientSideComponent";
 import Accordion from "../Accordion/Accordion";
 import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
@@ -8,6 +7,9 @@ import { useEffect, useState } from "react";
 import Icon from "../Icon/Icon";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import usePrevious from "../../hooks/usePrevious";
+import withClientSideComponent from "../../hoc/withClientSideComponent";
+import SocialLink from "../SocialLink/SocialLink";
+import { ESocialLinks } from "../../models/socialLinks";
 
 function Sidebar({
   currentPageParent,
@@ -15,7 +17,7 @@ function Sidebar({
   query,
 }: {
   currentPageParent: string;
-  asPath: any;
+  asPath: string;
   query: any;
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,21 +48,12 @@ function Sidebar({
         <div className={styles.mobile_header_right}>
           <LanguagesSelect asPath={asPath} lang={query.lang} />
           <ToggleThemeButton />
-          <a
-            className={styles.fb_icon}
-            href={`https://www.facebook.com/chessarbiter.info.${query.lang}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Icon name="fb" />
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.chessarbiter&pli=1"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Icon name="mobile" />
-          </a>
+
+          <SocialLink
+            href={`${ESocialLinks.fb}.${query.lang}`}
+            iconName={"fb"}
+          />
+          <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
         </div>
       </header>
       {isMenuOpen && (

@@ -1,4 +1,21 @@
-export const data: any = {
+interface ITable {
+  players1: number;
+  players2: number;
+  rows: string[][];
+}
+
+interface ILanguageMessages {
+  [key: string]: string;
+}
+
+interface IData {
+  messages: {
+    [ELANGUAGES: string]: ILanguageMessages;
+  };
+  tables: ITable[];
+}
+
+export const data: IData = {
   messages: {
     ru: {
       title:

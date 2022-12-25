@@ -1,10 +1,11 @@
+import { ReactNode } from "react";
 import { IIconName } from "../../models/iconName";
-import { LANGUAGES } from "../../models/languages";
+import { ELANGUAGES } from "../../models/languages";
 import styles from "./icon.module.css";
 
 type SvgProps = {
   className?: string;
-  children: any;
+  children: ReactNode;
   viewBox: string;
 };
 
@@ -37,7 +38,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case LANGUAGES.HY: {
+    case ELANGUAGES.HY: {
       return (
         <Svg viewBox="0 0 640 480">
           <path fill="#d90012" d="M0 0h640v160H0z" />
@@ -46,7 +47,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case LANGUAGES.EN: {
+    case ELANGUAGES.EN: {
       return (
         <Svg viewBox="0 0 640 480">
           <path fill="#012169" d="M0 0h512v512H0z" />
@@ -63,7 +64,7 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
-    case LANGUAGES.RU: {
+    case ELANGUAGES.RU: {
       return (
         <Svg viewBox="0 0 640 480">
           <g fillRule="evenodd" strokeWidth="1pt">
@@ -110,5 +111,4 @@ export default function Icon({ name }: IconProps) {
       );
     }
   }
-  return null;
 }

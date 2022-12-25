@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { ParsedUrlQuery } from "querystring";
 import { useMemo, useState } from "react";
 import strtr from "../../../utils/strTr";
 import { data } from "./data";
@@ -6,7 +7,7 @@ import styles from "./RoundTable.module.css";
 
 export default function RoundTable() {
   const [tableNumber, setTableNumber] = useState(0);
-  const { query }: any = useRouter();
+  const { query } = useRouter();
 
   const title = useMemo(() => {
     return strtr(data.messages?.[query.lang].title, [

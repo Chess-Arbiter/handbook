@@ -1,4 +1,4 @@
-export interface Page {
+export interface IPage {
   title: string;
   content: string;
   description: string;
@@ -6,15 +6,15 @@ export interface Page {
   slug: string
 }
 
-export enum PAGE_TYPES {
+export enum EPAGE_TYPES {
   MORE = "more",
   LAWS = "laws",
 }
 
-export interface TAB {
+export interface ITAB {
+  id: string;
   title_en: string;
   title_ru: string;
   title_hy: string;
   path: string;
-  id: string;
 }
