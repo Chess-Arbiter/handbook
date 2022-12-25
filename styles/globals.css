@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+
 [data-theme="dark"] {
   color-scheme: dark;
 }
@@ -41,10 +42,6 @@ p {
   font-weight: 400;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 #__next,
 .wrapper {
   width: 100%;
@@ -62,7 +59,12 @@ main {
 }
 
 a {
-  color: var(--primary-alpha);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 ul {

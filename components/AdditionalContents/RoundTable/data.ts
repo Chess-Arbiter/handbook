@@ -1,18 +1,18 @@
-export const data = {
+export const data: any = {
   messages: {
     ru: {
       title:
         "Таблицы очереди игры в турнирах по круговой системе при $1 или $2 участниках",
-      tur: "тур",
+      tour: "тур",
     },
     en: {
       title: "Queue tables for round robin tournaments with $1 or $2 players",
-      tur: "round",
+      tour: "round",
     },
     hy: {
       title:
         "Շրջանաձև համակարգով մրցաշարերի վիճակահանությունը՝ ըստ տուրերի $1 կամ $2 մասնակիցների դԵքում",
-      tur: "տուր",
+      tour: "տուր",
     },
   },
   tables: [

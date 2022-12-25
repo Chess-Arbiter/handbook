@@ -5,17 +5,26 @@
 .table_buttons_wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.25rem;
 }
 
 .table_buttons_wrapper button {
-  background-color: var(--success);
+  background-color: var(--gray);
   color: var(--white);
   font-weight: 700;
   border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   padding: 0.5rem;
+}
+
+.table_buttons_wrapper button.active {
+  background-color: var(--success);
+}
+
+.table_wrapper {
+  overflow: auto;
 }
 
 .table {
