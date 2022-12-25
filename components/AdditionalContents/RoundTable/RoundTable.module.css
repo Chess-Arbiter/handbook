@@ -1,0 +1,28 @@
+.round_table_wrapper h2 {
+  text-align: center;
+}
+
+.table_buttons_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.table_buttons_wrapper button {
+  background-color: var(--success);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+}
+
+.table {
+  min-width: 768px;
+  overflow-x: auto;
+}
+
+.table td {
+  padding: 1rem;
+}
