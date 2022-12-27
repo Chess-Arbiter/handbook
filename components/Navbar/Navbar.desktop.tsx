@@ -5,6 +5,7 @@ import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
+import { ParsedUrlQuery } from "querystring";
 
 function Sidebar({
   currentPageParent,

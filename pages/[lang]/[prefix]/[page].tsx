@@ -1,7 +1,5 @@
-import { GetServerSideProps } from "next";
 import Head from "next/head";
 import AdditionalContents from "../../../components/AdditionalContents/AdditionalContents";
-// import Data from "../../../constants/data";
 import MainLayout from "../../../layouts/MainLayout";
 import { IPage } from "../../../models/page";
 import getPage from "../../../utils/getPage";

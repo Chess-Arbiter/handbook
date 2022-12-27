@@ -1,7 +1,9 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 
-export default function withClientSideComponent(Component: React.FC<any>) {
-  return function Remder(props: any) {
+export default function withClientSideComponent(
+  Component: React.FC<Component>
+) {
+  return function Render(props: any) {
     const [isReady, setIsReady] = useState(false);
 
     useEffect(() => {
@@ -11,6 +13,6 @@ export default function withClientSideComponent(Component: React.FC<any>) {
     if (!isReady) {
       return null;
     }
-    return <Component {...props} />; 
+    return <Component {...props} />;
   };
 }
