@@ -13,8 +13,11 @@ export default function SidebarFooter({
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
       <LanguagesSelect asPath={asPath} lang={query.lang} />
-
-      <SocialLink href={`${ESocialLinks.fb}.${query.lang}`} iconName={"fb"} />
+      <SocialLink
+        href={`${ESocialLinks.fb}.${query.lang}`}
+        className={styles.fb_link}
+        iconName={"fb"}
+      />
       <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
     </footer>
   );
