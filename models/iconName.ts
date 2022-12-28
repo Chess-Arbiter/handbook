@@ -1,14 +1,18 @@
-import { LANGUAGES } from "./languages";
+import { ELANGUAGES } from "./languages";
 
 export type IIconName =
   | "dropdown"
-  | "fb"
   | "dark-mode"
   | "light-mode"
   | "fb"
   | "mobile"
-  | LANGUAGES.EN
-  | LANGUAGES.RU
-  | LANGUAGES.HY
+  | ELANGUAGES.EN
+  | ELANGUAGES.RU
+  | ELANGUAGES.HY
   | "menu"
   | "close";
+
+enum EIconNames {
+  dropdown = "dropdown",
+  darkMode = "dark-mode",
+}

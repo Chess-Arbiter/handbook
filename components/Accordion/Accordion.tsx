@@ -1,8 +1,9 @@
-import Link from "next/link";
 import React from "react";
-import { menuTrees } from "../../data/menuTrees";
-import getLink from "../../utils/getLink";
+import Link from "next/link";
 import Icon from "../Icon/Icon";
+import { IMenuTrees, IPages, menuTrees } from "../../data/menuTrees";
+import getLink from "../../utils/getLink";
+import { IAccordionProps } from "./Accordion.types";
 import styles from "./Accordion.module.css";
 
 export default function Accordion({
@@ -11,19 +12,13 @@ export default function Accordion({
   language,
   asPath,
   currentTab,
-}: {
-  defaultOpenedItem: string;
-  currentSlug: any;
-  language: any;
-  asPath: string;
-  currentTab: any;
-}) {
-  const MORE = menuTrees.filter((el: any) => el.type === currentTab);
+}: IAccordionProps) {
+  const MORE = menuTrees.filter((el: IMenuTrees) => el.type === currentTab);
 
   return (
     <div className={styles.navigation}>
       <nav>
-        {MORE.map((tree: any) => (
+        {MORE.map((tree: IMenuTrees) => (
           <React.Fragment key={tree.id}>
             <input
               id={tree.id}
@@ -38,7 +33,7 @@ export default function Accordion({
               <Icon name="dropdown" />
             </label>
             <div className={styles.content}>
-              {tree.pages.map((el: any) => (
+              {tree.pages.map((el: IPages) => (
                 <Link
                   href={getLink(asPath, 2, el.slug)}
                   key={el.slug}

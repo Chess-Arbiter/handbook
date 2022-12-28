@@ -1,6 +1,26 @@
-import { PAGE_TYPES } from "../models/page";
+import { EPAGE_TYPES } from "../models/page";
 
-export const menuTrees = [
+export interface IPages {
+  title_ru: string;
+  title_hy: string;
+  title_en: string;
+  slug: string;
+  description_en?: string;
+  description_hy?: string;
+  description_ru?: string;
+}
+
+export interface IMenuTrees {
+  id: string;
+  title_ru: string;
+  title_hy: string;
+  title_en: string;
+  pages: IPages[];
+  order: number;
+  type: EPAGE_TYPES;
+}
+
+export const menuTrees: IMenuTrees[] = [
   {
     id: "ratings",
     title_ru: "рейтинги",
@@ -45,7 +65,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: PAGE_TYPES.MORE,
+    type: EPAGE_TYPES.MORE,
   },
   {
     id: "intro",
@@ -61,7 +81,7 @@ export const menuTrees = [
       },
     ],
     order: 1,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
   {
     id: "basic_rules",
@@ -103,7 +123,7 @@ export const menuTrees = [
       },
     ],
     order: 2,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
   {
     id: "additional_indicators",
@@ -182,7 +202,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: PAGE_TYPES.MORE,
+    type: EPAGE_TYPES.MORE,
   },
   {
     id: "tournament_systems",
@@ -252,7 +272,7 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: PAGE_TYPES.MORE,
+    type: EPAGE_TYPES.MORE,
   },
 
   {
@@ -305,7 +325,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
   {
     id: "appendices",
@@ -342,7 +362,7 @@ export const menuTrees = [
       },
     ],
     order: 3,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
   {
     id: "guidelines",
@@ -371,7 +391,7 @@ export const menuTrees = [
       },
     ],
     order: 4,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
   {
     id: "glossary",
@@ -387,6 +407,6 @@ export const menuTrees = [
       },
     ],
     order: 5,
-    type: PAGE_TYPES.LAWS,
+    type: EPAGE_TYPES.LAWS,
   },
 ];

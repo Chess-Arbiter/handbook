@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 
-export default function withClientSideComponent(Component) {
-  return function Remder(props) {
+export default function withClientSideComponent(
+  Component: React.FC<Component>
+) {
+  return function Render(props: any) {
     const [isReady, setIsReady] = useState(false);
 
     useEffect(() => {
