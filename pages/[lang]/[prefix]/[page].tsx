@@ -36,7 +36,8 @@ export async function getServerSideProps({ params }: any) {
     return {
       props: { page },
     };
-  } catch {
+  } catch (err) {
+    console.log(err);
     return {
       notFound: true,
     };
