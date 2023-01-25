@@ -1,3 +1,8 @@
+export function keepURLSearch(url: string): string {
+  const seatch = window?.location?.search || "";
+  return url + seatch;
+}
+
 export default function getLink(
   currentPath: string,
   index: number,
@@ -7,5 +12,5 @@ export default function getLink(
   pathArr.shift();
   pathArr[index] = changeParam;
 
-  return `/${pathArr.join("/")}`;
+  return keepURLSearch(`/${pathArr.join("/")}`);
 }
