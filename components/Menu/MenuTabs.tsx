@@ -3,6 +3,7 @@ import { sideBarTabs } from "../../constants/sidebar";
 import Link from "next/link";
 import { ELANGUAGES } from "../../models/languages";
 import { ITAB } from "../../models/page";
+import { keepURLSearch } from "../../utils/getLink";
 
 export default function MenuTabs({
   lang,
@@ -17,7 +18,7 @@ export default function MenuTabs({
         <Link
           className={`${tab.id === activeTab ? styles.active : ""}`}
           key={tab.path}
-          href={`/${lang}/${tab.path}`}
+          href={keepURLSearch(`/${lang}/${tab.path}`) as string}
         >
           {tab[`title_${lang}`]}
         </Link>

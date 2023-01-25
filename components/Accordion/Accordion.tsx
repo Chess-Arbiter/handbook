@@ -36,6 +36,7 @@ export default function Accordion({
               {tree.pages.map((el: IPages) => (
                 <Link
                   href={getLink(asPath, 2, el.slug)}
+                  rel="keep-params"
                   key={el.slug}
                   className={`${
                     currentSlug === el.slug ? styles.active : ""

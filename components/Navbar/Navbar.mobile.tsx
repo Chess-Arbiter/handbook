@@ -10,6 +10,7 @@ import usePrevious from "../../hooks/usePrevious";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
 import SocialLink from "../SocialLink/SocialLink";
 import { ESocialLinks } from "../../models/socialLinks";
+import useMobile from "../../hooks/useMobile";
 
 function Sidebar({
   currentPageParent,
@@ -21,6 +22,7 @@ function Sidebar({
   query: any;
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = useMobile();
   const menuIcon = isMenuOpen ? "close" : "menu";
   const prevPrefix = usePrevious(query.prefix);
 
@@ -53,7 +55,9 @@ function Sidebar({
             href={`${ESocialLinks.fb}.${query.lang}`}
             iconName={"fb"}
           />
-          <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+          {!isMobile && (
+            <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+          )}
         </div>
       </header>
       {isMenuOpen && (

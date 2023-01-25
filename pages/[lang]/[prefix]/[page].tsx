@@ -12,7 +12,11 @@ export default function PageContent({ page }: { page: IPage }) {
         {page.description && (
           <meta name="description" content={page.description} />
         )}
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/images/favicon.ico"
+          type="image/x-icon"
+        />
       </Head>
       <MainLayout currentPageParent={page.parent}>
         <div dangerouslySetInnerHTML={{ __html: page.content }} />
@@ -36,7 +40,8 @@ export async function getServerSideProps({ params }: any) {
     return {
       props: { page },
     };
-  } catch {
+  } catch (err) {
+    console.log(err);
     return {
       notFound: true,
     };

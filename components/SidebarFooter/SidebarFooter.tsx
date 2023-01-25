@@ -1,3 +1,4 @@
+import useMobile from "../../hooks/useMobile";
 import { ESocialLinks } from "../../models/socialLinks";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
@@ -10,6 +11,7 @@ export default function SidebarFooter({
   query: any;
   asPath: string;
 }) {
+  const isMobile = useMobile();
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
       <LanguagesSelect asPath={asPath} lang={query.lang} />
@@ -18,7 +20,9 @@ export default function SidebarFooter({
         className={styles.fb_link}
         iconName={"fb"}
       />
-      <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+      {!isMobile && (
+        <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+      )}
     </footer>
   );
 }

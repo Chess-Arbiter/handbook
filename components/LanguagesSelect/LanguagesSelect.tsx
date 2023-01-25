@@ -4,6 +4,7 @@ import { ELANGUAGES } from "../../models/languages";
 import getLink from "../../utils/getLink";
 import styles from "./LanguagesSelect.module.css";
 import Icon from "../Icon/Icon";
+import useMobile from "../../hooks/useMobile";
 
 export default function LanguagesSelect({
   lang,
@@ -20,8 +21,13 @@ export default function LanguagesSelect({
 
     return ALL_LANGUAGES;
   }, [lang]);
+  const isMobile = useMobile();
 
   const linkIdx = 0;
+
+  if (isMobile) {
+    return <div />;
+  }
 
   return (
     <div className={styles.lang_wrapper}>
