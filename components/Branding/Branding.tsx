@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { siteTile } from "../../constants/titles";
-import logo from "../../public/images/logo.png";
+import logo from "../../public/images/logo.webp";
 import styles from "./Branding.module.css";
 
 export default function Branding() {
