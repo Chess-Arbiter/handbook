@@ -11,8 +11,3 @@ export type IIconName =
   | ELANGUAGES.HY
   | "menu"
   | "close";
-
-enum EIconNames {
-  dropdown = "dropdown",
-  darkMode = "dark-mode",
-}

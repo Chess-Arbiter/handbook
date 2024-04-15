@@ -11,16 +11,9 @@ import withClientSideComponent from "../../hoc/withClientSideComponent";
 import SocialLink from "../SocialLink/SocialLink";
 import { ESocialLinks } from "../../models/socialLinks";
 import useMobile from "../../hooks/useMobile";
+import { INavbarProps } from "./Navbar.types";
 
-function Sidebar({
-  currentPageParent,
-  asPath,
-  query,
-}: {
-  currentPageParent: string;
-  asPath: string;
-  query: any;
-}) {
+function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useMobile();
   const menuIcon = isMenuOpen ? "close" : "menu";

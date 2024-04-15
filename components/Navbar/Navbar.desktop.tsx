@@ -5,16 +5,9 @@ import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
+import { INavbarProps } from "./Navbar.types";
 
-function Sidebar({
-  currentPageParent,
-  asPath,
-  query,
-}: {
-  currentPageParent: string;
-  asPath: string;
-  query: any;
-}) {
+function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
   return (
     <aside>
       <div className={styles.sidebar}>

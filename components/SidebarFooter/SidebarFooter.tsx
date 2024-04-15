@@ -1,4 +1,5 @@
 import useMobile from "../../hooks/useMobile";
+import { ELANGUAGES } from "../../models/languages";
 import { ESocialLinks } from "../../models/socialLinks";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
@@ -8,7 +9,11 @@ export default function SidebarFooter({
   query,
   asPath,
 }: {
-  query: any;
+  query: {
+    lang: ELANGUAGES;
+    prefix: string;
+    page: string;
+  };
   asPath: string;
 }) {
   const isMobile = useMobile();
