@@ -36,6 +36,7 @@ export default function LanguagesSelect({
           key={lang}
           href={getLink(asPath, linkIdx, lang)}
           className={styles.lang}
+          aria-label={lang}
         >
           <Icon name={lang} />
         </Link>

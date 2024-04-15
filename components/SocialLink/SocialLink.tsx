@@ -11,7 +11,13 @@ export default function SocialLink({
   className?: string;
 }) {
   return (
-    <a className={className} href={href} target="_blank" rel="noreferrer">
+    <a
+      className={className}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={href}
+    >
       <Icon name={iconName} />
     </a>
   );
