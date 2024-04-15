@@ -4,8 +4,15 @@ import { IPage } from "../../../../models/page";
 import getPage from "../../../../utils/getPage";
 import "../../../../styles/globals.css";
 import "../../../../styles/theme.css";
+import { ELANGUAGES } from "../../../../models/languages";
 
-export async function generateMetadata({ params }: any) {
+interface IPageParams {
+  lang: ELANGUAGES;
+  prefix: string;
+  page: string;
+}
+
+export async function generateMetadata({ params }: { params: IPageParams }) {
   const page = await getData({ params });
 
   return {
@@ -14,8 +21,8 @@ export async function generateMetadata({ params }: any) {
   };
 }
 
-export default async function PageContent(params: any) {
-  const page = await getData(params);
+export default async function PageContent({ params }: { params: IPageParams }) {
+  const page = await getData({ params });
 
   return (
     <>
@@ -27,7 +34,7 @@ export default async function PageContent(params: any) {
   );
 }
 
-async function getData({ params }: any) {
+async function getData({ params }: { params: IPageParams }) {
   const pageDoc = await getPage(params.page);
   const page: IPage = {
     title: pageDoc?.[`title_${params.lang}`] || "",

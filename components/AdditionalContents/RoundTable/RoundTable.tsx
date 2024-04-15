@@ -2,13 +2,14 @@
 
 import { useParams } from "next/navigation";
 import { useMemo, useState } from "react";
+import { ELANGUAGES } from "../../../models/languages";
 import strtr from "../../../utils/strTr";
 import { data } from "./data";
 import styles from "./RoundTable.module.css";
 
 export default function RoundTable() {
   const [tableNumber, setTableNumber] = useState(0);
-  const { lang }: any = useParams();
+  const { lang }: { lang: ELANGUAGES } = useParams();
 
   const title: string = useMemo(() => {
     return strtr(data.messages?.[lang].title, [
