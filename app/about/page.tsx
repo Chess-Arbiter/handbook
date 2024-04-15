@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/about.module.css";
+import styles from "./about.module.css";
 import { data } from "./data";
 
 export default function About() {
