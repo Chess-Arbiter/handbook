@@ -1,3 +1,31 @@
 .error_container {
   text-align: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.error_container h1 {
+  color: #b10f2e;
+}
+
+.error_container img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.error_container p {
+  font-size: 16px;
+  color: #333;
+}
+
+.error_container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error_container li {
+  margin-bottom: 10px;
 }
