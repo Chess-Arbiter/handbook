@@ -25,9 +25,9 @@ export default function SidebarFooter({
         className={styles.fb_link}
         iconName={"fb"}
       />
-      {!isMobile && (
+      {/* {!isMobile && (
         <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
-      )}
+      )} */}
     </footer>
   );
 }
