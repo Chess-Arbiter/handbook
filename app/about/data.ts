@@ -9,6 +9,9 @@ export const data = {
     links: {
       github: "https://github.com/ArtyomSukiasyan/",
       linkedin: "https://www.linkedin.com/in/artyomsukiasyan/",
+      portfolio: "https://devchessplayer.com/",
+      telegram: "https://t.me/artyom1401",
+      lichess: "https://lichess.org/@/artiom1401",
     },
   },
   taron: {
@@ -16,8 +19,10 @@ export const data = {
     img: TaronPhoto,
     bio: "Taron bio",
     links: {
-      facebook: "",
-      gmail: "",
+      github: "https://github.com/taronaleksanian",
+      linkedin: "https://www.linkedin.com/in/taron-aleksanyan-61a584177/",
+      portfolio: "https://musefuldev.info/",
+      telegram: "https://t.me/musefuldev",
     },
   },
 };

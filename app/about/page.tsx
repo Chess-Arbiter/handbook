@@ -45,7 +45,7 @@ function Card({ person }: { person: "artyom" | "taron" }) {
       <div>
         {Object.entries(links).map(([key, value]) => {
           return (
-            <div className={styles.link}>
+            <div className={styles.link} key={value}>
               <a href={value.toString()} target="_blank" rel="no-referer">
                 {key}
               </a>
