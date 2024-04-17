@@ -13,7 +13,7 @@ interface ILangSelect {
 export default function LanguagesSelect({ lang, asPath }: ILangSelect) {
   const ALL_LANGUAGES = [ELANGUAGES.EN, ELANGUAGES.RU, ELANGUAGES.HY];
 
-  const languages = [lang, ...ALL_LANGUAGES.filter((l) => l !== lang)];
+  const languages = [lang, ...ALL_LANGUAGES.filter((el) => el !== lang)];
 
   const isMobile = useMobile();
 
