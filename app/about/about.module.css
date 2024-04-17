@@ -16,7 +16,6 @@
 
 .card {
   position: relative;
-  margin: 20px 30px;
   width: 300px;
   height: 500px;
   background: #fff;
@@ -27,6 +26,7 @@
 .h2,
 .h3 {
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .card:hover {
@@ -64,4 +64,14 @@
   left: 0;
   box-sizing: border-box;
   padding: 20px;
+}
+
+.link {
+  padding: 4px;
+  font-size: 20px;
+}
+
+.link a {
+  color: var(--info);
+  text-transform: capitalize;
 }
