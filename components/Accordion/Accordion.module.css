@@ -53,6 +53,13 @@ input.input:checked + .item + .content {
   transform: rotate(180deg);
 }
 
+.personal {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
 @media (max-width: 1024px) {
   .navigation {
     padding-right: 0;
