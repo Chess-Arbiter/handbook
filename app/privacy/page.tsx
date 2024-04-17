@@ -1,8 +1,14 @@
+import Branding from "../../components/Branding/Branding";
 import styles from "./privacy.module.css";
+
+export const metadata = {
+  title: "Privacy Policy | Chess Arbiter",
+};
 
 export default function PrivacyPage() {
   return (
     <div className={styles.container}>
+      <Branding />
       <h1>Privacy Policy</h1>
       <p>
         At Google Playmarket, we take your privacy very seriously. This Privacy

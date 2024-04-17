@@ -1,10 +1,16 @@
 import Image from "next/image";
+import Branding from "../../components/Branding/Branding";
 import styles from "./about.module.css";
 import { data } from "./data";
+
+export const metadata = {
+  title: "About us | Chess Arbiter",
+};
 
 export default function About() {
   return (
     <div className={styles.container}>
+      <Branding />
       <p>
         The Chess Arbiter program is NOT an official FIDE program, it was
         created by the initiative of two chess players. When editing the
