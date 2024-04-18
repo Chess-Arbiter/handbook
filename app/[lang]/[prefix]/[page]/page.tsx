@@ -1,10 +1,11 @@
-import AdditionalContents from "../../../../components/AdditionalContents/AdditionalContents";
 import MainLayout from "../../../../layouts/MainLayout";
-import { IPage } from "../../../../models/page";
+import AdditionalContents from "../../../../components/AdditionalContents/AdditionalContents";
 import getPage from "../../../../utils/getPage";
+import { siteTile } from "../../../../constants/titles";
+import { IPage } from "../../../../models/page";
+import { ELANGUAGES } from "../../../../models/languages";
 import "../../../../styles/globals.css";
 import "../../../../styles/theme.css";
-import { ELANGUAGES } from "../../../../models/languages";
 
 interface IPageParams {
   lang: ELANGUAGES;
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: { params: IPageParams }) {
   const page = await getData({ params });
 
   return {
-    title: page.title,
+    title: `${page.title} | ${siteTile}`,
     description: page.description,
   };
 }

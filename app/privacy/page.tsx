@@ -1,8 +1,10 @@
 import Branding from "../../components/Branding/Branding";
+import { siteTile } from "../../constants/titles";
 import styles from "./privacy.module.css";
 
 export const metadata = {
-  title: "Privacy Policy | Chess Arbiter",
+  title: `Privacy Policy | ${siteTile}`,
+  description: "Meet our Privacy Policy",
 };
 
 export default function PrivacyPage() {

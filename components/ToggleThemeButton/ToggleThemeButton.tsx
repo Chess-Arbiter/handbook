@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { getTheme, toggleTheme } from "../../utils/theme";
-import { IIconName } from "../../models/iconName";
 import Icon from "../Icon/Icon";
-import { Theme } from "../../constants/global";
 import styles from "./ToggleThemeButton.module.css";
 import useMobile from "../../hooks/useMobile";
+import { getTheme, toggleTheme } from "../../utils/theme";
+import { Theme } from "../../constants/global";
+import { IIconName } from "../../models/iconName";
 
 interface IThemeIcon {
   [key: string]: IIconName;

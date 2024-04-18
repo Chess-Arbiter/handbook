@@ -1,6 +1,7 @@
 export function keepURLSearch(url: string): string {
-  const seatch = window?.location?.search || "";
-  return url + seatch;
+  const search = window?.location?.search || "";
+
+  return url + search;
 }
 
 export default function getLink(

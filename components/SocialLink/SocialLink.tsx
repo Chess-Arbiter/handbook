@@ -1,5 +1,5 @@
-import { IIconName } from "../../models/iconName";
 import Icon from "../Icon/Icon";
+import { IIconName } from "../../models/iconName";
 
 export default function SocialLink({
   href,

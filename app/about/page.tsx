@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Branding from "../../components/Branding/Branding";
-import styles from "./about.module.css";
 import { data } from "./data";
+import styles from "./about.module.css";
+import { siteTile } from "../../constants/titles";
 
 export const metadata = {
-  title: "About us | Chess Arbiter",
+  title: `About us | ${siteTile}`,
+  description: `Meet ${siteTile} team.`,
 };
 
 export default function About() {

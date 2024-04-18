@@ -1,8 +1,8 @@
-import useMobile from "../../hooks/useMobile";
-import { ELANGUAGES } from "../../models/languages";
-import { ESocialLinks } from "../../models/socialLinks";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
+// import useMobile from "../../hooks/useMobile";
+import { ELANGUAGES } from "../../models/languages";
+import { ESocialLinks } from "../../models/socialLinks";
 import styles from "./SidebarFooter.module.css";
 
 export default function SidebarFooter({
@@ -16,7 +16,8 @@ export default function SidebarFooter({
   };
   asPath: string;
 }) {
-  const isMobile = useMobile();
+  // const isMobile = useMobile();
+
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
       <LanguagesSelect asPath={asPath} lang={query.lang} />

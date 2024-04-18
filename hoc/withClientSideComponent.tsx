@@ -14,6 +14,7 @@ export default function withClientSideComponent(
     if (!isReady) {
       return Fallback || <div />;
     }
+    
     return <Component {...props} />;
   };
 }
