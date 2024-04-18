@@ -15,6 +15,8 @@ export default function LanguagesSelect({ lang, asPath }: ILangSelect) {
 
   const languages = [lang, ...ALL_LANGUAGES.filter((el) => el !== lang)];
 
+  document.documentElement.setAttribute("lang", lang);
+  
   const isMobile = useMobile();
 
   const linkIdx = 0;
