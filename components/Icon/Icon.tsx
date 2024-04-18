@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { IIconName } from "../../models/iconName";
 import { ELANGUAGES } from "../../models/languages";
-import styles from "./icon.module.css";
+import styles from "./Icon.module.css";
 
 type SvgProps = {
   className?: string;
