@@ -4,14 +4,15 @@
   --success: #53a57c;
   --warning: #d09444;
   --danger: #f44336;
-  --white: #F3F6F6;
+  --white: #f3f6f6;
   --black: #141d30;
   --gray: #727891;
   --gray-alpha: #72789133;
-  --primary-alpha: #628ce17d; 
+  --primary-alpha: #628ce17d;
   --bg-color: var(--white);
   --text-color: var(--info);
   --border-color: var(--gray);
+  --white-bg: #fff;
 }
 
 [data-theme="dark"]:root {

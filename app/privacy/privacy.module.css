@@ -4,7 +4,7 @@
   text-align: justify;
   padding: 2rem;
   margin: auto;
-  background-color: #ffffff;
+  background-color: var(--white-bg);
 }
 
 .container h1 {

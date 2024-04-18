@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect } from "react";
+import "../../styles/theme.css";
 import styles from "./Error.module.css";
 
 export default function Error({ error }: { error: Error }) {

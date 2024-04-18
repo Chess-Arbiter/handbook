@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../../styles/theme.css";
 import styles from "./404.module.css";
 
 export default function NotFound() {
