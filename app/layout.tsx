@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { guessTheme } from "../utils/theme";
+import { CSPostHogProvider } from "./providers";
 
 export default function RootLayout({
   children,
@@ -23,7 +24,9 @@ export default function RootLayout({
           type="image/x-icon"
         />
       </head>
-      <body>{children}</body>
+      <CSPostHogProvider>
+        <body>{children}</body>
+      </CSPostHogProvider>
     </html>
   );
 }
