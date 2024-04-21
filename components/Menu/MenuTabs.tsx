@@ -1,9 +1,9 @@
-import styles from "./menu.module.css";
-import { sideBarTabs } from "../../constants/sidebar";
 import Link from "next/link";
+import { keepURLSearch } from "../../utils/getLink";
+import { sideBarTabs } from "../../constants/sidebar";
 import { ELANGUAGES } from "../../models/languages";
 import { ITAB } from "../../models/page";
-import { keepURLSearch } from "../../utils/getLink";
+import styles from "./menu.module.css";
 
 export default function MenuTabs({
   lang,

@@ -1,9 +1,9 @@
 import RoundTable from "./RoundTable/RoundTable";
 
-const contents: any = {
+const contents: { [key: string]: JSX.Element } = {
   round_system: <RoundTable />,
 };
 
-export default function AdditionalContents({ page }: any) {
+export default function AdditionalContents({ page }: { page: string }) {
   return contents[page] || null;
 }

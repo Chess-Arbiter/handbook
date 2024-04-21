@@ -1,20 +1,13 @@
-import styles from "./sidebar.module.css";
-import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import Accordion from "../Accordion/Accordion";
+import SidebarFooter from "../SidebarFooter/SidebarFooter";
 import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
+import { INavbarProps } from "./Navbar.types";
+import styles from "./sidebar.module.css";
 
-function Sidebar({
-  currentPageParent,
-  asPath,
-  query,
-}: {
-  currentPageParent: string;
-  asPath: string;
-  query: any;
-}) {
+function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
   return (
     <aside>
       <div className={styles.sidebar}>

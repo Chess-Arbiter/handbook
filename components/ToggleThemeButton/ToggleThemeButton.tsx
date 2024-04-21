@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { getTheme, toggleTheme } from "../../utils/theme";
-import { IIconName } from "../../models/iconName";
 import Icon from "../Icon/Icon";
-import { Theme } from "../../constants/global";
 import styles from "./ToggleThemeButton.module.css";
 import useMobile from "../../hooks/useMobile";
+import { getTheme, toggleTheme } from "../../utils/theme";
+import { Theme } from "../../constants/global";
+import { IIconName } from "../../models/iconName";
 
-interface IthemeIcon {
+interface IThemeIcon {
   [key: string]: IIconName;
 }
 
-const themeIcon: IthemeIcon = {
+const themeIcon: IThemeIcon = {
   dark: "dark-mode",
   light: "light-mode",
 };
@@ -30,7 +30,11 @@ export default function ToggleThemeButton() {
     return <div />;
   }
   return (
-    <button className={styles.button} onClick={onToggleTheme}>
+    <button
+      aria-label="theme"
+      className={styles.button}
+      onClick={onToggleTheme}
+    >
       <Icon name={themeIcon[nextTheme]} />
     </button>
   );

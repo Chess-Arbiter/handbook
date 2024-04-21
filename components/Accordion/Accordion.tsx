@@ -48,6 +48,10 @@ export default function Accordion({
             </div>
           </React.Fragment>
         ))}
+      <div className={styles.personal}>
+        <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/about">About Us</Link>
+      </div>
       </nav>
     </div>
   );

@@ -1,19 +1,22 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { useParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import strtr from "../../../utils/strTr";
 import { data } from "./data";
+import { ELANGUAGES } from "../../../models/languages";
 import styles from "./RoundTable.module.css";
 
 export default function RoundTable() {
   const [tableNumber, setTableNumber] = useState(0);
-  const { query }: any = useRouter();
+  const { lang }: { lang: ELANGUAGES } = useParams();
 
   const title: string = useMemo(() => {
-    return strtr(data.messages?.[query.lang].title, [
+    return strtr(data.messages?.[lang].title, [
       String(data.tables[tableNumber].players1),
       String(data.tables[tableNumber].players2),
     ]);
-  }, [tableNumber, query.lang]);
+  }, [tableNumber, lang]);
 
   const handleTableChange = (e: React.MouseEvent<HTMLButtonElement>) => {
     const event = e.target as HTMLButtonElement;
@@ -50,7 +53,7 @@ export default function RoundTable() {
                 return (
                   <tr key={index}>
                     <td>
-                      {data.messages[query.lang].tour} {index + 1}
+                      {data.messages[lang].tour} {index + 1}
                     </td>
                     {row.map((field: string, index: number) => {
                       return <td key={index}>{field}</td>;

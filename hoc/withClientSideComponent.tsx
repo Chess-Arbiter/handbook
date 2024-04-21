@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function withClientSideComponent(
   Component: any,
@@ -14,6 +14,7 @@ export default function withClientSideComponent(
     if (!isReady) {
       return Fallback || <div />;
     }
+    
     return <Component {...props} />;
   };
 }

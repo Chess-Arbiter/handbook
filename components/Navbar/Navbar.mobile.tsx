@@ -1,28 +1,21 @@
-import styles from "./sidebar.module.css";
+import { useEffect, useState } from "react";
 import Accordion from "../Accordion/Accordion";
 import MenuTabs from "../Menu/MenuTabs";
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
 import Branding from "../Branding/Branding";
-import { useEffect, useState } from "react";
 import Icon from "../Icon/Icon";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
-import usePrevious from "../../hooks/usePrevious";
-import withClientSideComponent from "../../hoc/withClientSideComponent";
 import SocialLink from "../SocialLink/SocialLink";
+import withClientSideComponent from "../../hoc/withClientSideComponent";
+import usePrevious from "../../hooks/usePrevious";
+// import useMobile from "../../hooks/useMobile";
 import { ESocialLinks } from "../../models/socialLinks";
-import useMobile from "../../hooks/useMobile";
+import { INavbarProps } from "./Navbar.types";
+import styles from "./sidebar.module.css";
 
-function Sidebar({
-  currentPageParent,
-  asPath,
-  query,
-}: {
-  currentPageParent: string;
-  asPath: string;
-  query: any;
-}) {
+function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isMobile = useMobile();
+  // const isMobile = useMobile();
   const menuIcon = isMenuOpen ? "close" : "menu";
   const prevPrefix = usePrevious(query.prefix);
 
@@ -55,9 +48,9 @@ function Sidebar({
             href={`${ESocialLinks.fb}.${query.lang}`}
             iconName={"fb"}
           />
-          {!isMobile && (
+          {/* {!isMobile && (
             <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
-          )}
+          )} */}
         </div>
       </header>
       {isMenuOpen && (

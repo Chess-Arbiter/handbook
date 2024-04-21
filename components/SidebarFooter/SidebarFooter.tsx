@@ -1,17 +1,23 @@
-import useMobile from "../../hooks/useMobile";
-import { ESocialLinks } from "../../models/socialLinks";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
+// import useMobile from "../../hooks/useMobile";
+import { ELANGUAGES } from "../../models/languages";
+import { ESocialLinks } from "../../models/socialLinks";
 import styles from "./SidebarFooter.module.css";
 
 export default function SidebarFooter({
   query,
   asPath,
 }: {
-  query: any;
+  query: {
+    lang: ELANGUAGES;
+    prefix: string;
+    page: string;
+  };
   asPath: string;
 }) {
-  const isMobile = useMobile();
+  // const isMobile = useMobile();
+
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
       <LanguagesSelect asPath={asPath} lang={query.lang} />
@@ -20,9 +26,9 @@ export default function SidebarFooter({
         className={styles.fb_link}
         iconName={"fb"}
       />
-      {!isMobile && (
+      {/* {!isMobile && (
         <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
-      )}
+      )} */}
     </footer>
   );
 }
