@@ -1,12 +1,3 @@
-.container {
-  width: 100%;
-  max-width: 768px;
-  text-align: justify;
-  padding: 2rem;
-  margin: auto;
-  background-color: var(--white-bg);
-}
-
 .card_container {
   display: flex;
   justify-content: space-evenly;

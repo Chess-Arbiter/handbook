@@ -1,10 +1,7 @@
-import ArtyomPhoto from "../../public/images/team/artyom.webp";
-import TaronPhoto from "../../public/images/team/taron.webp";
-
 export const data = {
   artyom: {
     name: "Artyom Sukiasyan",
-    img: ArtyomPhoto,
+    img: "/images/team/artyom.webp",
     bio: "Seasoned professional chess player who has gracefully transitioned into the world of development, crafting elegant websites and innovative mobile applications.",
     links: {
       github: "https://github.com/ArtyomSukiasyan/",
@@ -16,7 +13,7 @@ export const data = {
   },
   taron: {
     name: "Taron Aleksanyan",
-    img: TaronPhoto,
+    img: "/images/team/taron.webp",
     bio: "A frontend engineer with a keen interest in creating exceptional user experiences. I enjoy tackling complex problems and delivering high-quality code.",
     links: {
       github: "https://github.com/taronaleksanian",

@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Branding from "../../components/Branding/Branding";
 import { data } from "./data";
 import styles from "./about.module.css";
-import { siteTile } from "../../constants/titles";
+import { siteTile } from "../../../constants/titles";
 
 export const metadata = {
   title: `About us | ${siteTile}`,
@@ -11,8 +10,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className={styles.container}>
-      <Branding />
+    <>
       <p>
         The Chess Arbiter program is NOT an official FIDE program, it was
         created by the initiative of two chess players. When editing the
@@ -25,7 +23,7 @@ export default function About() {
         <Card person="artyom" />
         <Card person="taron" />
       </div>
-    </div>
+    </>
   );
 }
 
@@ -37,7 +35,7 @@ function Card({ person }: { person: "artyom" | "taron" }) {
       <h3 className={styles.h3}>{name}</h3>
       <div className={styles.card}>
         <div className={styles.imgBox}>
-          <Image src={img} alt={name} priority />
+          <Image src={img} fill alt={name} priority />
         </div>
         <div className={styles.details}>
           <h2>{name}</h2>

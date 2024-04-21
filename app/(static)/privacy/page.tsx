@@ -1,6 +1,4 @@
-import Branding from "../../components/Branding/Branding";
-import { siteTile } from "../../constants/titles";
-import styles from "./privacy.module.css";
+import { siteTile } from "../../../constants/titles";
 
 export const metadata = {
   title: `Privacy Policy | ${siteTile}`,
@@ -9,8 +7,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className={styles.container}>
-      <Branding />
+    <>
       <h1>Privacy Policy</h1>
       <p>
         At Google Playmarket, we take your privacy very seriously. This Privacy
@@ -93,6 +90,6 @@ export default function PrivacyPage() {
         .
       </p>
       <p>Effective Date: February 19, 2023.</p>
-    </div>
+    </>
   );
 }
