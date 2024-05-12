@@ -7,7 +7,7 @@ import Icon from "../Icon/Icon";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
-import usePrevious from "../../hooks/usePrevious";
+// import usePrevious from "../../hooks/usePrevious";
 // import useMobile from "../../hooks/useMobile";
 import { ESocialLinks } from "../../models/socialLinks";
 import { INavbarProps } from "./Navbar.types";
@@ -17,17 +17,17 @@ function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const isMobile = useMobile();
   const menuIcon = isMenuOpen ? "close" : "menu";
-  const prevPrefix = usePrevious(query.prefix);
+  // const prevPrefix = usePrevious(query.prefix);
 
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
 
-  useEffect(() => {
-    if (prevPrefix === query.prefix) {
-      setIsMenuOpen(false);
-    }
-  }, [query.page, query.prefix, prevPrefix]);
+  // useEffect(() => {
+  //   if (prevPrefix === query.prefix) {
+  //     setIsMenuOpen(false);
+  //   }
+  // }, [query.page, query.prefix, prevPrefix]);
 
   return (
     <div
