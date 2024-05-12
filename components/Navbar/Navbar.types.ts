@@ -2,7 +2,7 @@ import { ELANGUAGES } from "../../models/languages";
 
 interface IQuery {
   lang: ELANGUAGES;
-  prefix: string;
+  prefix: "laws" | "more";
   page: string;
 }
 
