@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  next:
+    image: chessarbiter-next
+    build: ./
+    container_name: chessarbiter-next
+    restart: unless-stopped
+    env_file:
+        - .env
+    ports:
+        - 3002:3000
