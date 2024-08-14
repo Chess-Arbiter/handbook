@@ -15,6 +15,7 @@ interface IPageParams {
 
 export async function generateMetadata({ params }: { params: IPageParams }) {
   const page = await getData({ params });
+console.log({desct:page.description});
 
   return {
     title: `${page.title} | ${siteTile}`,
@@ -39,7 +40,7 @@ async function getData({ params }: { params: IPageParams }) {
   const pageDoc = await getPage(params.page);
   const page: IPage = {
     title: pageDoc?.[`title_${params.lang}`] || "",
-    description: pageDoc?.[`description_${params.lang}`] || "",
+    description: pageDoc?.[`description_${params.lang}`] || "Chess rules",
     content: pageDoc?.[`content_${params.lang}`] || "",
     parent: pageDoc.parent || "",
     slug: pageDoc?.slug || "",
