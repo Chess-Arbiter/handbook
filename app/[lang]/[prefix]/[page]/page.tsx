@@ -15,7 +15,6 @@ interface IPageParams {
 
 export async function generateMetadata({ params }: { params: IPageParams }) {
   const page = await getData({ params });
-console.log({desct:page.description});
 
   return {
     title: `${page.title} | ${siteTile}`,
