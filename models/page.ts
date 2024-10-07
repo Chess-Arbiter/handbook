@@ -1,9 +1,12 @@
-export interface IPage {
+export interface IPageMetadata {
   title: string;
-  content: string;
   description: string;
   parent: string;
   slug: string;
+}
+
+export interface IPage extends IPageMetadata {
+  content: string;
 }
 
 export enum EPAGE_TYPES {
