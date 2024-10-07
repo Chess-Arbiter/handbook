@@ -1,3 +1,11 @@
+import { ELANGUAGES } from "./languages";
+
+export interface IPageParams {
+  lang: ELANGUAGES;
+  prefix: string;
+  page: string;
+}
+
 export interface IPageMetadata {
   title: string;
   description: string;
