@@ -9,6 +9,7 @@ import "../../../../styles/theme.css";
 import fs from "fs";
 import path from "path";
 import Markdown from "react-markdown";
+import remarkGfm from 'remark-gfm';
 
 interface IPageParams {
   lang: ELANGUAGES;
@@ -31,7 +32,7 @@ export default async function PageContent({ params }: { params: IPageParams }) {
   return (
     <>
       <MainLayout currentPageParent={page.parent}>
-        <Markdown>{page.content}</Markdown>
+        <Markdown remarkPlugins={[remarkGfm]}>{page.content}</Markdown>
         <AdditionalContents page={page.slug} />
       </MainLayout>
     </>
