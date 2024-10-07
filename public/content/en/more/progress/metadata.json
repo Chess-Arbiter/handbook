@@ -1,0 +1,6 @@
+{
+  "title": "Progress",
+  "parent": "additional_indicators",
+  "slug": "progress",
+  "description": "Progress, or cumulative total, is the sum of the participant&#39;s points after each round."
+}
