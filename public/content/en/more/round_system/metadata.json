@@ -1,0 +1,6 @@
+{
+  "title": "Round robin",
+  "parent": "tournament_systems",
+  "slug": "round_system",
+  "description": "Round robin - a system of drawing in which each participant of the tournament plays with everyone during the round."
+}

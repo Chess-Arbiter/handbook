@@ -1,0 +1,6 @@
+{
+  "title": "Knockout system",
+  "parent": "tournament_systems",
+  "slug": "olympic_system",
+  "description": "The knockout system (Olympic system) is a system for holding chess tournaments, it is a playoff version, built taking into account the peculiarities of chess."
+}
