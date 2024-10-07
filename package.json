@@ -4,14 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "deploy": "firebase login && firebase deploy --only hosting",
-    "enable-firebase": "firebase login && firebase experiments:enable webframeworks",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^10.12.5",
     "next": "^14.2.5",
     "posthog-js": "^1.155.4",
     "react": "^18.3.1",

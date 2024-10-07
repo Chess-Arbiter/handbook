@@ -5,15 +5,13 @@ Here you'll find everything you need to know about playing chess, laid out in si
 [https://chessarbiter.info](https://chessarbiter.info/en/laws/intro)
 
 ## How it works
-We store sorted data by categories in our Firebase database. At the time of visiting the page, we send a dynamic generated request to Firebase and receive data in the current language of the site.
+We store sorted data by categories in our file system. At the time of visiting the page, we send a dynamic generated request to fs and receive data in the current language of the site.
 
 - Page display file: ./app/[lang]/[prefix]/[page]/page.tsx
-- Request file: ./utils/getPage.ts
 
 ## Stack
 - NextJs
-- Firebase
-
+- File system as database
 ## Contributors
 - Artyom Sukiasyan
   - [Github](https://github.com/ArtyomSukiasyan/)
