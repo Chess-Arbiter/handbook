@@ -9,7 +9,7 @@ import getData from "../../../../utils/getData";
 import { IPageParams } from "../../../../models/page";
 
 export async function generateMetadata({ params }: { params: IPageParams }) {
-  const page = await getData({ params });
+  const page = getData(params);
 
   return {
     title: `${page.title} | ${siteTile}`,
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: IPageParams }) {
 }
 
 export default async function PageContent({ params }: { params: IPageParams }) {
-  const page = await getData({ params });
+  const page = getData(params);
 
   return (
     <>

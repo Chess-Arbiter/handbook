@@ -1,28 +1,36 @@
 import fs from "fs";
 import path from "path";
+import { contentFileName, jsonFileName } from "../constants/fileNames";
 import { IPage, IPageMetadata, IPageParams } from "../models/page";
 
-export default async function getData({ params }: { params: IPageParams }) {
-  const postsDirectory = path.join(
-    process.cwd(),
-    "public",
-    "content",
-    `${params.lang}`,
-    `${params.prefix}`,
-    `${params.page}`
+export default function getData(params: IPageParams): IPage {
+  const postsDirectory = getDirectory(params);
+  const { content, metaDataJson } = getFilesContent(postsDirectory);
+  const metadata = getMetadata(metaDataJson);
+
+  return {
+    content,
+    ...metadata,
+  };
+}
+
+function getDirectory(params: IPageParams) {
+  const { lang, prefix, page } = params;
+
+  return path.join(process.cwd(), "public", "content", lang, prefix, page);
+}
+
+function getFilesContent(postsDirectory: string) {
+  const contentPath = path.join(postsDirectory, contentFileName);
+  const metadataPath = path.join(postsDirectory, jsonFileName);
+
+  const [content, metaDataJson] = [contentPath, metadataPath].map((file) =>
+    fs.readFileSync(file, "utf8")
   );
 
-  const filePath = path.join(postsDirectory, `content.md`);
-  const fileContents = fs.readFileSync(filePath, "utf8");
-  const metadataPath = path.join(postsDirectory, `metadata.json`);
-  const metaDataJson = fs.readFileSync(metadataPath, "utf8");
+  return { content, metaDataJson };
+}
 
-  const postData: IPageMetadata = JSON.parse(metaDataJson);
-
-  const page: IPage = {
-    content: fileContents,
-    ...postData,
-  };
-
-  return page;
+function getMetadata(metaDataJson: string): IPageMetadata {
+  return JSON.parse(metaDataJson);
 }
