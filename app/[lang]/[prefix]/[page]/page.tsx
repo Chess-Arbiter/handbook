@@ -9,7 +9,8 @@ import "../../../../styles/theme.css";
 import fs from "fs";
 import path from "path";
 import Markdown from "react-markdown";
-import remarkGfm from 'remark-gfm';
+import remarkGfm from "remark-gfm";
+import TurndownService from "turndown";
 
 interface IPageParams {
   lang: ELANGUAGES;
@@ -40,8 +41,8 @@ export default async function PageContent({ params }: { params: IPageParams }) {
 }
 
 async function getDataM({ params }: { params: IPageParams }) {
-  console.log({params});
-  
+  // console.log({ params });
+
   const postsDirectory = path.join(
     process.cwd(),
     "public",
@@ -57,7 +58,7 @@ async function getDataM({ params }: { params: IPageParams }) {
   const metaDataJson = fs.readFileSync(metadataPath, "utf8");
 
   const postData: IPageMetadata = JSON.parse(metaDataJson);
-  console.log({ postData });
+  // console.log({ postData });
 
   const page: IPage = {
     content: fileContents,
@@ -68,7 +69,7 @@ async function getDataM({ params }: { params: IPageParams }) {
 }
 
 async function getData({ params }: { params: IPageParams }) {
-  console.log({params});
+  // console.log({ params });
 
   const pageDoc = await getPage(params.page);
   const page: IPage = {
@@ -78,7 +79,52 @@ async function getData({ params }: { params: IPageParams }) {
     parent: pageDoc.parent || "",
     slug: pageDoc?.slug || "",
   };
-  console.log({ page });
+  // console.log({ page });
+
+  const postsDirectory = path.join(
+    process.cwd(),
+    "public",
+    "content",
+    `${params.lang}`,
+    `${params.prefix}`,
+    `${params.page}`
+  );
+  const turndownService = new TurndownService();
+  const markdownContent = turndownService.turndown(page.content);
+
+  const isCreated = createFolderIfNotExists(postsDirectory);
+  if (isCreated) {
+    createMarkdownFile(postsDirectory, "content", markdownContent);
+    createJsonFile(postsDirectory, "metadata", {
+      description: page.description,
+      parent: page.parent,
+      slug: page.slug,
+      title: page.title,
+    });
+  }
 
   return page;
+}
+
+function createFolderIfNotExists(folderPath: string) {
+  if (!fs.existsSync(folderPath)) {
+    fs.mkdirSync(folderPath, { recursive: true });
+    return true;
+  }
+  return false;
+}
+
+// Function to create a markdown file
+function createMarkdownFile(folder: string, fileName: string, content: string) {
+  const filePath = path.join(folder, `${fileName}.md`);
+  console.log({ filePath });
+  fs.writeFileSync(filePath, content, "utf-8");
+  console.log(`${fileName}.md created successfully!`);
+}
+
+// Function to create a JSON file
+function createJsonFile(folder: string, fileName: string, jsonObject: any) {
+  const filePath = path.join(folder, `${fileName}.json`);
+  fs.writeFileSync(filePath, JSON.stringify(jsonObject, null, 2), "utf-8");
+  console.log(`${fileName}.json created successfully!`);
 }
