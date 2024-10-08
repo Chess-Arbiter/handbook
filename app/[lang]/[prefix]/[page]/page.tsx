@@ -14,6 +14,9 @@ export async function generateMetadata({ params }: { params: IPageParams }) {
   return {
     title: `${page.title} | ${siteTile}`,
     description: page.description,
+    openGraph: {
+      images: "images/logo.webp",
+    },
   };
 }
 
