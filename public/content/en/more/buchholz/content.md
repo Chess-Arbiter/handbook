@@ -10,4 +10,4 @@ The following types of Buchholz are also used:
 - **The Median Buchholz 2** is the Buchholz score reduced by the two highest and the two lowest scores of the opponents.
 - **The Buchholz Cut 1** is the Buchholz score reduced by the lowest score of the opponents.
 - **The Buchholz Cut 2** is the Buchholz score reduced by the two lowest scores of the opponents
-- **Sum of Buhgoltz** - Sum of Competitors' Buhgoltz Indicators.
+- **Sum of Buchholtz** - Sum of Competitors' Buchholtz Indicators.

@@ -21,7 +21,7 @@ The number of games played in black of that tournament is calculated. The more, 
 
 ## Rating performance
 
-The [tournament rating (performance)](./rating_perfomance) is calculated. The more, the higher
+The [tournament rating (performance)](./rating_performance) is calculated. The more, the higher
 
 ## Direct encounter
 

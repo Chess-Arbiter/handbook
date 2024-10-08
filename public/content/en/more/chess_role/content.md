@@ -16,7 +16,7 @@ Besides the [rating](./rating_elo), a chess player's strength is also determined
 - Woman FIDE Master (WFM)
 - Woman Candidate Master (WCM)
 
-A number of conditions must be fulfilled to be qualified for a chess title. You need to show the required [rating performance](./rating_perfomance) and have the required average rating of the competitors.
+A number of conditions must be fulfilled to be qualified for a chess title. You need to show the required [rating performance](./rating_performance) and have the required average rating of the competitors.
 
 **Grandmaster title - 3 times:**
 

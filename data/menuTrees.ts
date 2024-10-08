@@ -43,7 +43,7 @@ export const menuTrees: IMenuTrees[] = [
         title_ru: "рейтинговый перфоманс",
         title_hy: "վարկանիշային պերֆոմանս",
         title_en: "the tournament rating (performance)",
-        slug: "rating_perfomance",
+        slug: "rating_performance",
         description_en:
           "A rating performance is a rating due to which a chess player played in a given tournament.",
         description_hy:

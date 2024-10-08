@@ -1,6 +1,6 @@
 {
   "description": "Рейтинговый перфоманс - это рейтинг, в силу которого шахматист сыграл в данном турнире.",
   "parent": "ratings",
-  "slug": "rating_perfomance",
+  "slug": "rating_performance",
   "title": "Рейтинговый Перфоманс"
 }

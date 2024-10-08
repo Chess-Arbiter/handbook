@@ -1,6 +1,6 @@
 {
   "description": "Վարկանիշային պերֆորմանսը ցույց է տալիս այն ուժը, որով շախմատիստը խաղացել է տվյալ մրցաշարում։",
   "parent": "ratings",
-  "slug": "rating_perfomance",
+  "slug": "rating_performance",
   "title": "Վարկանիշային պերֆոմանս"
 }
