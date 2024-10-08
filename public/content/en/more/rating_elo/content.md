@@ -12,7 +12,7 @@ At the core of the elo system is the assumption that the power of each chess pla
 
 The expected value of rating points that player A receives while playing against player B calculates (its equal to the half of the sum of player A's probability of winning and the probability of a draw ending).
 
-    ![image info](../../../../images/ratingFormula.svg)
+![](../../../../images/ratingFormula.svg)
 
 Where:
 
