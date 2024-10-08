@@ -1,5 +1,4 @@
-Article 9: The drawn game
-=========================
+# Article 9: The drawn game
 
 **9.1.1** The regulations of an event may specify that players cannot offer or agree to a draw, whether in less than a specified number of moves or at all, without the consent of the arbiter.
 
@@ -29,13 +28,13 @@ Article 9: The drawn game
 
 **9.3.2** the last 50 moves by each player have been completed without the movement of any pawn and without any capture.
 
-**9.4** If the player touches a piece as in [Article 4.3](./article4#4.3), he loses the right to claim a draw under Article 9.2 or 9.3 on that move.
+**9.4** If the player touches a piece as in [Article 4.3](./article4), he loses the right to claim a draw under Article 9.2 or 9.3 on that move.
 
 **9.5.1** If a player claims a draw under Article 9.2 or 9.3, he or the arbiter shall stop the chessclock (see Article 6.12.1 or 6.12.2). He is not allowed to withdraw his claim.
 
 **9.5.2** If the claim is found to be correct, the game is immediately drawn.
 
-**9.5.3** If the claim is found to be incorrect, the arbiter shall add two minutes to the opponent’s remaining thinking time. Then the game shall continue. If the claim was based on an intended move, this move must be made in accordance with Articles [3](./article3) and [4](../../rules/article4).
+**9.5.3** If the claim is found to be incorrect, the arbiter shall add two minutes to the opponent’s remaining thinking time. Then the game shall continue. If the claim was based on an intended move, this move must be made in accordance with Articles [3](./article3) and [4](./article4).
 
 **9.6** If one or both of the following occur(s) then the game is drawn:
 

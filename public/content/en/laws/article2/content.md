@@ -1,13 +1,9 @@
-Article 2: The initial position of the pieces on the chessboard
-===============================================================
+# Article 2: The initial position of the pieces on the chessboard
 
 **2.1** The chessboard is composed of an 8 x 8 grid of 64 equal squares alternately light (the white squares) and dark (the black squares).
+The chessboard is placed between the players in such a way that the near corner square to the right of the player is white.
 
-**The** chessboard is placed between the players in such a way that the near corner square to the right of the player is white.
-
-**2.2** At the beginning of the game White has 16 light-coloured pieces (the white pieces); Black has 16 dark-coloured pieces (the black pieces)․
-
-**These** pieces are as follows:
+**2.2** At the beginning of the game White has 16 light-coloured pieces (the white pieces); Black has 16 dark-coloured pieces (the black pieces)․ These pieces are as follows:
 
 **A white king**, usually indicated by the symbol
 
@@ -57,7 +53,7 @@ Article 2: The initial position of the pieces on the chessboard
 
 ![](../../images/bsoldier.png)
 
-**Staunton** Pieces
+Staunton Pieces
 
 ![](../../images/figures.jpg)
 

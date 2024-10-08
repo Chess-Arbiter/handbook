@@ -1,7 +1,6 @@
 {
-    "title": "Article 10: Points",
-    "parent": "competition_rules",
-    "slug": "article10",
-    "description": "Chess rules"
-  }
-  
+  "title": "Article 10: Points",
+  "parent": "competition_rules",
+  "slug": "article10",
+  "description": "Article 10 of the FIDE Laws explains the point system in chess. A player earns 1 point for a win, 0 points for a loss, and ½ point for a draw, with no deviations from these standard scores."
+}

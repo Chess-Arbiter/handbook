@@ -1,6 +1,6 @@
 # Appendix D. Rules for play with blind and visually disabled players
 
-**D.1** The organiser, after consulting the arbiter, shall have the power to adapt the following rules according to local circumstances. In competitive chess between sighted and visually disabled (legally blind) players either player may demand the use of two boards, the sighted player using a normal board, the visually disabled player using one specially constructed. Thisboard must meet the following requirements:
+**D.1** The organiser, after consulting the arbiter, shall have the power to adapt the following rules according to local circumstances. In competitive chess between sighted and visually disabled (legally blind) players either player may demand the use of two boards, the sighted player using a normal board, the visually disabled player using one specially constructed. This board must meet the following requirements:
 
 **D.1.1** measure at least 20 cm by 20 cm,
 

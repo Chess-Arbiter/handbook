@@ -2,7 +2,7 @@
 
 **8.1.1** In the course of play each player is required to record his own moves and those of his opponent in the correct manner, move after move, as clearly and legibly as possible, in the algebraic notation [(Appendix C)](./applicationc), on the ‘scoresheet’ prescribed for the competition.
 
-**8.1.2** It is forbidden to write the moves in advance, unless the player is claiming a draw according to Article [9.2](./article9#9.2.1) or [9.3](./article9) or adjourning a game according to [Guidelines I.1.1](./rec1)[.](./rec1)
+**8.1.2** It is forbidden to write the moves in advance, unless the player is claiming a draw according to Article [9.2](./article9) or [9.3](./article9) or adjourning a game according to [Guidelines I.1.1.](./rec1)
 
 **8.1.3** A player may reply to his opponent’s move before recording it, if he so wishes. He must record his previous move before making another.
 

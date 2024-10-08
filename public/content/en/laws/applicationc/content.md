@@ -1,8 +1,8 @@
 # Appendix C. Algebraic notation
 
-**FIDE** recognises for its own tournaments and matches only one system of notation, the Algebraic System, and recommends the use of this uniform chess notation also for chess literature and periodicals. Scoresheets using a notation system other than algebraic may not be used as evidence in cases where normally the scoresheet of a player is used for that purpose. An arbiter who observes that a player is using a notation system other than the algebraic should warn the player of this requirement.
+FIDE recognises for its own tournaments and matches only one system of notation, the Algebraic System, and recommends the use of this uniform chess notation also for chess literature and periodicals. Scoresheets using a notation system other than algebraic may not be used as evidence in cases where normally the scoresheet of a player is used for that purpose. An arbiter who observes that a player is using a notation system other than the algebraic should warn the player of this requirement.
 
-**Description of the Algebraic System**
+## Description of the Algebraic System
 
 **С.1** In this description, ‘piece’ means a piece other than a pawn.
 
@@ -64,6 +64,6 @@
 
 **С.13** Abbreviations
 
-**0-0** = castling with rook h1 or rook h8 (kingside castling)0-0-0 = castling with rook a1 or rook a8 (queenside castling)x = captures+ = check++ or # = checkmatee.p. = captures ‘en passant’ The last four are optional.
+0-0 = castling with rook h1 or rook h8 (kingside castling), 0-0-0 = castling with rook a1 or rook a8 (queenside castling), x = captures, + or ++ = check, # = checkmatee. .p. = captures ‘en passant’. The last four are optional.
 
 **Sample** game: 1.e4 e5 2. Nf3 Nf6 3. d4 exd4 4. e5 Ne4 5. Qxd4 d5 6. exd6 e.p. Nxd6 7. Bg5 Nc6 8. Qe3+ Be7 9. Nbd2 0-0 10. 0-0-0 Re8 11. Kb1 (=)Or: 1. e4 e5 2. Nf3 Nf6 3. d4 ed4 4. e5 Ne4 5. Qd4 d5 6. ed6 Nd6 7. Bg5 Nc6 8. Qe3 Be7 9 Nbd2 0-0 10. 0-0-0 Re8 11. Kb1 (=)Or: 1. e2e4 e7e5 2.Ng1f3 Ng8f6 3. d2d4 e5xd4 4. e4e5 Nf6e4 5. Qd1xd4 d7d5 6. e5xd6 e.p. Ne4xd6 7. Bc1g5 Nb8c6 8. Qd4d3 Bf8e7 9. Nb1d2 0-0 10. 0-0-0 Rf8e8 11. Kb1 (=)

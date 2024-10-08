@@ -14,7 +14,7 @@
 
 **7.4.3** The arbiter may penalise the player who displaced the pieces.
 
-**7.5.1** An illegal move is completed once the player has pressed his clock. If during a game it is found that an illegal move has been completed, the position immediately before the irregularity shall be reinstated. If the position immediately before the irregularity cannot be determined, the game shall continue from the last identifiable position prior to the irregularity. [Article 4.3](./article4#4.3) and [4.7](./article4#4.7) apply to the move replacing the illegal move. The game shall then continue from this reinstated position.
+**7.5.1** An illegal move is completed once the player has pressed his clock. If during a game it is found that an illegal move has been completed, the position immediately before the irregularity shall be reinstated. If the position immediately before the irregularity cannot be determined, the game shall continue from the last identifiable position prior to the irregularity. [Article 4.3](./article4) and [4.7](./article4) apply to the move replacing the illegal move. The game shall then continue from this reinstated position.
 
 **7.5.2** If the player has moved a pawn to the furthest distant rank, pressed the clock, but not replaced the pawn with a new piece, the move is illegal. The pawn shall be replaced by a queen of the same colour as the pawn.
 

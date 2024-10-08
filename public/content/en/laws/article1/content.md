@@ -1,5 +1,4 @@
-Article 1: The nature and objectives of the game of chess
-=========================================================
+# Article 1: The nature and objectives of the game of chess
 
 **1.1** The game of chess is played between two opponents who move their pieces on a square board called a chessboard.
 

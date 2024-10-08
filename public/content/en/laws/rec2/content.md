@@ -2,9 +2,9 @@
 
 **II.1** Before a Chess960 game a starting position is randomly set up, subject to certain rules. After this, the game is played in the same way as regular chess. In particular, pieces and pawns have their normal moves, and each player's objective is to checkmate the opponent's king.
 
-**II.2** **Starting-position requirements**
+## II.2 Starting-position requirements
 
-**The** starting position for Chess960 must meet certain rules. White pawns are placed on the second rank as in regular chess. All remaining white pieces are placed randomly on the first rank, but with the following restrictions:
+The starting position for Chess960 must meet certain rules. White pawns are placed on the second rank as in regular chess. All remaining white pieces are placed randomly on the first rank, but with the following restrictions:
 
 **II.2.1** the king is placed somewhere between the two rooks, and
 
@@ -14,7 +14,7 @@
 
 **The** starting position can be generated before the game either by a computer program or using dice, coin, cards, etc.
 
-**II.3** **Chess960 castling rules**
+## II.3 Chess960 castling rules
 
 **II.3.1** Chess960 allows each player to castle once per game, a move by potentially both the king and rook in a single move. However, a few interpretations of regular chess rules are needed for castling, because the regular rules presume initial locations of the rook and king that are often not applicable in Chess960.
 
@@ -36,7 +36,7 @@
 
 **II.3.2.6** Clarification:
 
-**Thus,** after c-side castling (notated as 0-0-0 and known as queen-side castling in orthodox chess), the king is on the c-square (c1 for white and c8 for black) and the rook is on the d-square (d1 for white and d8 for black). After g-side castling (notated as 0-0 and known as king-side castling in orthodox chess), the king is on the g-square (g1 for white and g8 for black) and the rook is on the f-square (f1 for white and f8 for black).
+Thus, after c-side castling (notated as 0-0-0 and known as queen-side castling in orthodox chess), the king is on the c-square (c1 for white and c8 for black) and the rook is on the d-square (d1 for white and d8 for black). After g-side castling (notated as 0-0 and known as king-side castling in orthodox chess), the king is on the g-square (g1 for white and g8 for black) and the rook is on the f-square (f1 for white and f8 for black).
 
 **II.3.2.7** Notes
 

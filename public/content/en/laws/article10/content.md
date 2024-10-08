@@ -1,5 +1,4 @@
-Article 10: Points
-==================
+# Article 10: Points
 
 **10.1** Unless the regulations of an event specify otherwise, a player who wins his game, or wins by forfeit, scores one point (1), a player who loses his game, or forfeits, scores no points (0), and a player who draws his game scores a half point (½).
 

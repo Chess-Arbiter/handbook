@@ -23,7 +23,7 @@ would be adversely affected
 In case of incorrect king placement, castling is not allowed. In case of incorrect  
 rook placement, castling with this rook is not allowed.
 
-**A4.2** If the arbiter observes an action taken under Article 7.5.1, 7.5.2, 7.5.3 or 7.5.4, he shall act according to Article 7.5.5, provided the opponent has not made his next move. If the arbiter does not intervene, the opponent is entitled to claim, provided the opponent has not made his next move. If the opponent does not claim and the arbiter does not intervene, the illegal move shall stand and the game shall continue. Once the opponent has made his next move, an illegal move cannot be corrected unless this is agreed by the players without intervention of the arbiter.
+**A4.2** If the arbiter observes an action taken under [Article 7.5.1, 7.5.2, 7.5.3 or 7.5.4](./article7), he shall act according to Article 7.5.5, provided the opponent has not made his next move. If the arbiter does not intervene, the opponent is entitled to claim, provided the opponent has not made his next move. If the opponent does not claim and the arbiter does not intervene, the illegal move shall stand and the game shall continue. Once the opponent has made his next move, an illegal move cannot be corrected unless this is agreed by the players without intervention of the arbiter.
 
 **A4.3** To claim a win on time, the claimant may stop the chessclock and notify the arbiter. However, the game is drawn if the position is such that the claimant cannot checkmate the player’s king by any possible series of legal moves.
 

@@ -24,7 +24,7 @@
 
 **12.5** The arbiter may award either or both players additional time in the event of external disturbance of the game.
 
-**12.6** The arbiter must not intervene in a game except in cases described by the Laws of Chess. He shall not indicate the number of moves completed, except in applying [Article 8.5](/en/rules/article8) when at least one flag has fallen. The arbiter shall refrain from informing a player that his opponent has completed a move or that the player has not pressed his clock.
+**12.6** The arbiter must not intervene in a game except in cases described by the Laws of Chess. He shall not indicate the number of moves completed, except in applying [Article 8.5](./article8) when at least one flag has fallen. The arbiter shall refrain from informing a player that his opponent has completed a move or that the player has not pressed his clock.
 
 **12.7** If someone observes an irregularity, he may inform only the arbiter. Players in other games must not to speak about or otherwise interfere in a game. Spectators are not allowed to interfere in a game. The arbiter may expel offenders from the playing venue.
 

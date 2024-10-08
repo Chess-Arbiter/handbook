@@ -1,5 +1,4 @@
-Article 3: The moves of the pieces
-==================================
+# Article 3: The moves of the pieces
 
 **3.1** It is not permitted to move a piece to a square occupied by a piece of the same colour.
 
