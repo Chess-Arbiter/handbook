@@ -1,0 +1,6 @@
+{
+  "title": "Chess Titles",
+  "parent": "ratings",
+  "slug": "chess_role",
+  "description": "The International Chess Federation awards chess titles - Candidate of Master(CM), FIDE Master (FM), International Master (IM) and International Grandmaster (GM)."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Swiss system",
+  "parent": "tournament_systems",
+  "slug": "sw_system",
+  "description": "The Swiss system is a system of holding chess tournaments, where opponents with the same or similar number of points play in each round."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Match",
+  "parent": "tournament_systems",
+  "slug": "match_system",
+  "description": "A match is one of the forms of chess competition. It is a competition between two opponents or teams."
+}

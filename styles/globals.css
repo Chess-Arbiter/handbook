@@ -46,6 +46,16 @@ p {
   font-weight: 400;
 }
 
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
 #__next,
 .wrapper {
   width: 100%;
@@ -93,12 +103,12 @@ ul {
   .wrapper {
     display: block;
   }
-  
+
   main {
     max-width: 100vw;
     padding: 5.625rem 1rem 1rem;
   }
-  
+
   :is(.menu_open) + main {
     max-height: 0;
     overflow: hidden;

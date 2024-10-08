@@ -1,0 +1,7 @@
+{
+    "title": "ELO rating",
+    "parent": "ratings",
+    "slug": "rating_elo",
+    "description": "Elo rating is a method of calculating the relative strength of players in chess. This rating system was developed by the American professor Arpad Elo"
+  }
+  

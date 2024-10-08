@@ -1,0 +1,6 @@
+{
+  "description": "Պրոգրեսսը մասնակցի ամեն տուրից հետո հավաքած միավորների համագումարն է",
+  "parent": "additional_indicators",
+  "slug": "progress",
+  "title": "Պրոգրես"
+}
