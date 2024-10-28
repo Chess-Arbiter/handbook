@@ -48,10 +48,21 @@ function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
             href={`${ESocialLinks.fb}.${query.lang}`}
             iconName={"fb"}
           />
+          {isMobile && (
+            <>
+              <SocialLink
+                href={`${ESocialLinks.github}/mobile`}
+                iconName={"github"}
+              />
+            </>
+          )}
           {!isMobile && (
             <>
               <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
-              <SocialLink href={`${ESocialLinks.github}/handbook`} iconName={"github"} />
+              <SocialLink
+                href={`${ESocialLinks.github}/handbook`}
+                iconName={"github"}
+              />
             </>
           )}
         </div>
