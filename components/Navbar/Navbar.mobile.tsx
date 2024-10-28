@@ -49,7 +49,10 @@ function Sidebar({ currentPageParent, asPath, query }: INavbarProps) {
             iconName={"fb"}
           />
           {!isMobile && (
-            <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+            <>
+              <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
+              <SocialLink href={`${ESocialLinks.github}/handbook`} iconName={"github"} />
+            </>
           )}
         </div>
       </header>

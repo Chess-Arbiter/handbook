@@ -10,4 +10,5 @@ export type IIconName =
   | ELANGUAGES.RU
   | ELANGUAGES.HY
   | "menu"
-  | "close";
+  | "close"
+  | "github";
