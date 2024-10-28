@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import GithubLink from "../components/GithubLink/GithubLink";
 import { guessTheme } from "../utils/theme";
 import { CSPostHogProvider } from "./providers";
 
@@ -26,10 +25,7 @@ export default function RootLayout({
         />
       </head>
       <CSPostHogProvider>
-        <body>
-          <GithubLink />
-          {children}
-        </body>
+        <body>{children}</body>
       </CSPostHogProvider>
     </html>
   );
