@@ -3,7 +3,6 @@ import { ELANGUAGES } from "../../models/languages";
 import getLink from "../../utils/getLink";
 import styles from "./LanguagesSelect.module.css";
 import Icon from "../Icon/Icon";
-import useMobile from "../../hooks/useMobile";
 
 interface ILangSelect {
   lang: ELANGUAGES;
@@ -16,14 +15,8 @@ export default function LanguagesSelect({ lang, asPath }: ILangSelect) {
   const languages = [lang, ...ALL_LANGUAGES.filter((el) => el !== lang)];
 
   document.documentElement.setAttribute("lang", lang);
-  
-  const isMobile = useMobile();
 
   const linkIdx = 0;
-
-  if (isMobile) {
-    return <div />;
-  }
 
   return (
     <div className={styles.lang_wrapper}>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Icon from "../Icon/Icon";
 import styles from "./ToggleThemeButton.module.css";
-import useMobile from "../../hooks/useMobile";
 import { getTheme, toggleTheme } from "../../utils/theme";
 import { Theme } from "../../constants/global";
 import { IIconName } from "../../models/iconName";
@@ -17,7 +16,6 @@ const themeIcon: IThemeIcon = {
 
 export default function ToggleThemeButton() {
   const [theme, setTheme] = useState(getTheme);
-  const isMobile = useMobile();
 
   const nextTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
 
@@ -26,9 +24,6 @@ export default function ToggleThemeButton() {
     setTheme(newTheme);
   }
 
-  if (isMobile) {
-    return <div />;
-  }
   return (
     <button
       aria-label="theme"

@@ -29,7 +29,7 @@ export default function SidebarFooter({
       {!isMobile && (
         <>
           <SocialLink href={ESocialLinks.playStore} iconName={"mobile"} />
-          <SocialLink href={`${ESocialLinks.github}/handbook`} iconName={"github"} />
+          <SocialLink href={`${ESocialLinks.github}`} iconName={"github"} />
         </>
       )}
     </footer>
