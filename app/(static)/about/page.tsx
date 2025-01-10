@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { data } from "./data";
 import styles from "./about.module.css";
-import { siteTile } from "../../../constants/titles";
+import { siteTitle } from "../../../constants/titles";
 
 export const metadata = {
-  title: `About us | ${siteTile}`,
-  description: `Meet ${siteTile} team.`,
+  title: `About us | ${siteTitle}`,
+  description: `Meet ${siteTitle} team.`,
 };
 
 export default function About() {

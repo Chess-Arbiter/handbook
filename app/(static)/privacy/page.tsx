@@ -1,7 +1,7 @@
-import { siteTile } from "../../../constants/titles";
+import { siteTitle } from "../../../constants/titles";
 
 export const metadata = {
-  title: `Privacy Policy | ${siteTile}`,
+  title: `Privacy Policy | ${siteTitle}`,
   description: "Meet our Privacy Policy",
 };
 
