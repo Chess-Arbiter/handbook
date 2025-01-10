@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import RoundTable from "./RoundTable/RoundTable";
 
 const contents: { [key: string]: JSX.Element } = {
