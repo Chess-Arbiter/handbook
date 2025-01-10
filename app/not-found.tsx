@@ -1,9 +1,9 @@
 import NotFound from "../components/404/404";
-import { siteTile } from "../constants/titles";
+import { siteTitle } from "../constants/titles";
 
 export const metadata = {
-  title: `Page not found | ${siteTile}`,
-  description: `Page not found on site ${siteTile}`,
+  title: `Page not found | ${siteTitle}`,
+  description: `Page not found on site ${siteTitle}`,
 };
 
 export default NotFound;

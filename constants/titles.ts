@@ -1,1 +1,1 @@
-export const siteTile = "Chess Arbiter"
+export const siteTitle = "Chess Arbiter"
