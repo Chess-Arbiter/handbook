@@ -1,5 +1,5 @@
 build:
-	docker compose build --no-cache chessarbiter-next
+	docker compose build --no-cache next
 
 start:
 	docker compose up -d
