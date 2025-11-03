@@ -314,7 +314,7 @@ export const menuTrees: IMenuTrees[] = [
       {
         title_ru: "статья 11: поведение игроков",
         title_en: "article 11: the conduct of the players",
-        title_hy: "հոդված 11: խաղացողների պահվածքը",
+        title_hy: "հոդված 11: խաղացողների վարքը",
         slug: "article11",
       },
       {
