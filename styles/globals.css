@@ -52,7 +52,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
 }
 
@@ -81,9 +82,13 @@ a:hover {
   cursor: pointer;
 }
 
+ul,
+ol {
+  margin-left: 1.5rem;
+}
+
 ul {
   list-style-type: square;
-  margin-left: 1.5rem;
 }
 
 :root[data-theme="light"] .sidebar__footer {
@@ -109,9 +114,10 @@ ul {
     padding: 5.625rem 1rem 1rem;
   }
 
-  :is(.menu_open) + main {
+  :is(.menu_open)+main {
     max-height: 0;
     overflow: hidden;
   }
 }
+
 /* Mobile end */
