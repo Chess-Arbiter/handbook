@@ -1,6 +1,6 @@
 # Guidelines I. Adjourned games
 
-**I.1.1** If a game is not finished at the end of the time prescribed for play, the arbiter shall require the player having the move to ‘seal’ that move. The player must write his move in unambiguous notation on his scoresheet, put his scoresheet and that of his opponent in an envelope, seal the envelope and only then stop the chessclock. Until he has stopped the chessclock the player retains the right to change his sealed move. If, after being told by the arbiter to seal his move, the player makes a move on the chessboard he must write that same move on his scoresheet as his sealed move.
+**I.1.1** If a game is not finished at the end of the time prescribed for play, the arbiter shall require the player having the move to ‘seal’ that move. The player must write his/her move in unambiguous notation on a paper scoresheet, put his/her scoresheet and that of his/her opponent in an envelope, seal the envelope and only then stop the chessclock. Until he/she has stopped the chessclock the player retains the right to change his/her sealed move. If, after being told by the arbiter to seal his/her move, the player makes a move on the chessboard he/she must write that same move on his/her scoresheet as his/her sealed move.
 
 **I.1.2** A player having the move who adjourns the game before the end of the playing session shall be considered to have sealed at the nominal time for the end of the session, and his remaining time shall so be recorded.
 
@@ -44,7 +44,7 @@
 
 **I.9.2** the player having to reply to the sealed move is not present, his clock shall be started; on his arrival, he may stop his clock and summon the arbiter; the envelope is then opened and the sealed move is made on the chessboard; his clock is then restarted,
 
-**I.9.3** the player who sealed the move is not present, his opponent has the right to record his reply on the scoresheet, seal his scoresheet in a fresh envelope, stop his clock and start the absent player’s clock instead of making his reply in the normal manner; if so, the envelope shall be handed to the arbiter for safekeeping and opened on the absent player’s arrival.
+**I.9.3** the player who sealed the move is not present, his/her opponent has the right to record his/her reply on the scoresheet, seal his/her scoresheet in a fresh envelope, pause his/her clock and start the absent player’s clock instead of making his/her reply in the normal manner; if so, the envelope shall be handed to the arbiter for safekeeping and opened on the absent player’s arrival.
 
 **I.10** Any player who arrives at the chessboard after the default time shall lose the game unless the arbiter decides otherwise. However, if the sealed move resulted in the conclusion of the game, that conclusion shall still apply.
 

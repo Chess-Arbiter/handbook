@@ -12,7 +12,7 @@
 
 **9.2.1** The game is drawn, upon a correct claim by a player having the move, when the same position for at least the third time (not necessarily by a repetition of moves):
 
-**9.2.1.1** is about to appear, if he first writes his move, which cannot be changed, on his scoresheet and declares to the arbiter his intention to make this move, or
+**9.2.1.1** is about to appear, if he/she first indicates his/her move, which cannot be changed, by writing it on the paper scoresheet or entering it on the electronic scoresheet and declares to the arbiter his/her intention to make this move, or
 
 **9.2.1.2** has just appeared, and the player claiming the draw has the move.
 
@@ -24,7 +24,7 @@
 
 **9.3** The game is drawn, upon a correct claim by a player having the move, if:
 
-**9.3.1** he writes his move, which cannot be changed, on his scoresheet and declares to the arbiter his intention to make this move which will result in the last 50 moves by each player having been made without the movement of any pawn and without any capture, or
+**9.3.1** he/she indicates his/her move, which cannot be changed, by writing it on the paper scoresheet or entering it on the electronic scoresheet and declares to the arbiter his/her intention to make this move which will result in the last 50 moves by each player having been made without the movement of any pawn and without any capture, or
 
 **9.3.2** the last 50 moves by each player have been completed without the movement of any pawn and without any capture.
 
