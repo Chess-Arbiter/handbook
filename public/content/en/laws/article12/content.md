@@ -16,7 +16,7 @@
 
 **12.2.6** take special measures in the interests of disabled players and those who need medical attention,
 
-**12.2.7** follow the Anti-Cheating Rules or Guidelines
+**12.2.7** follow the Fair-Play Rules or Guidelines
 
 **12.3** The arbiter shall observe the games, especially when the players are short of time, enforce decisions he has made, and impose penalties on players where appropriate.
 

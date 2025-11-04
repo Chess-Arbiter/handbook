@@ -4,7 +4,7 @@
 
 **6.2.1** During the game each player, having made his move on the chessboard, shall stop his own clock and start his opponent’s clock (that is to say, he shall press his clock). This “completes” the move. A move is also completed if:
 
-**6.2.1.1** the move ends the game (see Articles 5.1.1, 5.2.1, 5.2.2, 9.6.1 and 9.6.2), or
+**6.2.1.1** the move ends the game (see Articles [5.1.1, 5.2.1, 5.2.2](./article5), [9.6.1 and 9.6](./article9)), or
 
 **6.2.1.2** the player has made his next move, when his previous move was not completed.
 
@@ -46,7 +46,7 @@
 
 **6.11.3** The arbiter shall decide when the game restarts.
 
-**6.11.4** If a player stops the chessclock in order to seek the arbiter’s assistance, the arbiter shall determine whether the player had any valid reason for doing so. If the player had no valid reason for stopping the chessclock, the player shall be penalised in accordance with [Article 12.9](./article12).
+**6.11.4** If a player pauses the chessclock in order to seek the arbiter’s assistance, the arbiter shall determine whether the player had any valid reason for doing so. If the player had no valid reason for pausing the chessclock, the player shall be penalised in accordance with [Article 12.9](./article12).
 
 **6.12.1** Screens, monitors, or demonstration boards showing the current position on the chessboard, the moves and the number of moves made/completed, and clocks which also show the number of moves, are allowed in the playing hall.
 
