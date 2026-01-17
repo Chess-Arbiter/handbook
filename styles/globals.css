@@ -71,11 +71,16 @@ td {
 main {
   padding: 1.75rem 3rem;
   max-width: 70vw;
+  position: relative;
+  z-index: 1;
 }
 
 a {
   color: var(--primary);
   font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 a:hover {
