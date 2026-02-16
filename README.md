@@ -12,16 +12,11 @@ We store sorted data by categories in our file system. At the time of visiting t
 ## Stack
 - NextJs
 - File system as database
-## Contributors
-- Artyom Sukiasyan
-  - [Github](https://github.com/ArtyomSukiasyan/)
-  - [Linkedin](https://www.linkedin.com/in/artyomsukiasyan/)
-  - [Lichess](https://lichess.org/@/artiom1401)
-  - [Portfolio](https://devchessplayer.com/)
-  - [Telegram](https://t.me/artyom1401)
-- Taron Aleksanyan
-  - [Github](https://github.com/taronaleksanian)
-  - [Linkedin](https://www.linkedin.com/in/taron-aleksanyan-61a584177/)
-  - [Portfolio](https://musefuldev.info/)
-  - [Telegram](https://t.me/musefuldev)
 
+
+## Contributors
+| Name               | Role     | Github                                           | Linkedin                                                       | Portfolio                 | Contacts              |Other                                     | 
+|--------------------|----------|--------------------------------------------------|----------------------------------------------------------------|---------------------------------------------|---------------------------|------------------------|
+| Artyom Sukiasyan   | Author, Developer| [Github](https://github.com/ArtyomSukiasyan/)    | [Linkedin](https://www.linkedin.com/in/artyomsukiasyan/)       |[Portfolio](https://devchessplayer.com/) | [Telegram](https://t.me/artyom1401) |  [Lichess](https://lichess.org/@/artiom1401) | 
+| Taron Aleksanyan     | Author, Developer   | [Github](https://github.com/taronaleksanian)       | [Linkedin](https://www.linkedin.com/in/taron-aleksanyan-61a584177)| -     | [Telegram](https://t.me/musefuldev)    | –                                           | 
+| Gor Saribekyan     | DevOps   | [Github](https://github.com/gorsaribekyan)       | [Linkedin](https://www.linkedin.com/in/gor-saribekyan-272b61229)| [Portfolio](https://devopsgor.am/)      | [Telegram](https://t.me/d0tfl0w)    | –                                           | 
