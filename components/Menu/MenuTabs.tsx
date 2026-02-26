@@ -5,6 +5,12 @@ import { ELANGUAGES } from "../../models/languages";
 import { ITAB } from "../../models/page";
 import styles from "./menu.module.css";
 
+const calculatorTitles: Record<ELANGUAGES, string> = {
+  [ELANGUAGES.EN]: "Calculator",
+  [ELANGUAGES.RU]: "Калькулятор",
+  [ELANGUAGES.HY]: "Հաշվիչ",
+};
+
 export default function MenuTabs({
   lang,
   activeTab,
@@ -23,6 +29,9 @@ export default function MenuTabs({
           {tab[`title_${lang}`]}
         </Link>
       ))}
+      <Link href="/rating-calculator">
+        {calculatorTitles[lang]}
+      </Link>
     </div>
   );
 }

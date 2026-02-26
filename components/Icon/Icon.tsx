@@ -110,6 +110,13 @@ export default function Icon({ name }: IconProps) {
         </Svg>
       );
     }
+    case "calculator": {
+      return (
+        <Svg viewBox="0 0 32 32">
+          <path d="M26 0h-20c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM12 28h-4v-4h4v4zM12 22h-4v-4h4v4zM12 16h-4v-4h4v4zM18 28h-4v-4h4v4zM18 22h-4v-4h4v4zM18 16h-4v-4h4v4zM24 28h-4v-10h4v10zM24 16h-4v-4h4v4zM24 10h-16v-6h16v6z"></path>
+        </Svg>
+      );
+    }
     case "close": {
       return (
         <Svg viewBox="0 0 32 32">

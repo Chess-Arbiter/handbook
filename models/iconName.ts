@@ -11,4 +11,5 @@ export type IIconName =
   | ELANGUAGES.HY
   | "menu"
   | "close"
-  | "github";
+  | "github"
+  | "calculator";

@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { guessTheme } from "../utils/theme";
+import "../styles/globals.css";
+import "../styles/theme.css";
 
 export default function RootLayout({
   children,

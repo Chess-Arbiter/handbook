@@ -1,6 +1,6 @@
 .menu_tabs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 0.75rem;
 }
 
