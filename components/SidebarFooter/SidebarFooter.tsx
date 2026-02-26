@@ -22,7 +22,7 @@ export default function SidebarFooter({
 
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
-      <Link href="/rating-calculator" aria-label="Rating Calculator">
+      <Link href={`/${query.lang}/rating-calculator`} aria-label="Rating Calculator">
         <Icon name="calculator" />
       </Link>
       <LanguagesSelect asPath={asPath} lang={query.lang} />

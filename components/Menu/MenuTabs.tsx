@@ -29,7 +29,7 @@ export default function MenuTabs({
           {tab[`title_${lang}`]}
         </Link>
       ))}
-      <Link href="/rating-calculator">
+      <Link href={`/${lang}/rating-calculator`}>
         {calculatorTitles[lang]}
       </Link>
     </div>
