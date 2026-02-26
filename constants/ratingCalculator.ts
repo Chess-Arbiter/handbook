@@ -1,0 +1,47 @@
+import { ELANGUAGES } from "../models/languages";
+import { Translations } from "../models/ratingCalculator";
+
+export const T: Record<ELANGUAGES, Translations> = {
+    [ELANGUAGES.EN]: {
+        title: "Rating Calculator",
+        yourRating: "Your rating",
+        kValue: "K value",
+        opponents: "Opponents",
+        opponentRating: "Opponent rating",
+        win: "Win",
+        draw: "Draw",
+        lose: "Lose",
+        ratingChange: "Rating change",
+        newRating: "New rating",
+        ratingPlaceholder: "e.g. 2000",
+        opponentPlaceholder: "Opponent rating",
+    },
+    [ELANGUAGES.RU]: {
+        title: "Калькулятор рейтинга",
+        yourRating: "Ваш рейтинг",
+        kValue: "Значение K",
+        opponents: "Соперники",
+        opponentRating: "Рейтинг соперника",
+        win: "Победа",
+        draw: "Ничья",
+        lose: "Поражение",
+        ratingChange: "Изменение рейтинга",
+        newRating: "Новый рейтинг",
+        ratingPlaceholder: "напр. 2000",
+        opponentPlaceholder: "Рейтинг соперника",
+    },
+    [ELANGUAGES.HY]: {
+        title: "Վարկանիշի հաշվիչ",
+        yourRating: "Ձեր վարկանիշը",
+        kValue: "K արժեք",
+        opponents: "Մրցակիցներ",
+        opponentRating: "Մրցակցի վարկանիշ",
+        win: "Հաղթանակ",
+        draw: "Ոչ ոքի",
+        lose: "Պարտություն",
+        ratingChange: "Վարկանիշի փոփոխություն",
+        newRating: "Նոր վարկանիշ",
+        ratingPlaceholder: "Օրինակ՝ 2000",
+        opponentPlaceholder: "Մրցակցի վարկանիշ",
+    },
+};

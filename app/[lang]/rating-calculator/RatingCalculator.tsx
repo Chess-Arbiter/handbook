@@ -3,80 +3,14 @@
 import { useState } from "react";
 import { ELANGUAGES } from "../../../models/languages";
 import styles from "./rating-calculator.module.css";
-
-type Result = "win" | "draw" | "lose";
-
-interface Opponent {
-  id: number;
-  rating: string;
-  result: Result;
-}
+import { Opponent, Result } from "../../../models/ratingCalculator";
+import { T } from "../../../constants/ratingCalculator";
 
 const SCORE: Record<Result, number> = { win: 1, draw: 0.5, lose: 0 };
 
 function expectedScore(ra: number, rb: number): number {
   return 1 / (1 + Math.pow(10, (rb - ra) / 400));
 }
-
-type Translations = {
-  title: string;
-  yourRating: string;
-  kValue: string;
-  opponents: string;
-  opponentRating: string;
-  win: string;
-  draw: string;
-  lose: string;
-  ratingChange: string;
-  newRating: string;
-  ratingPlaceholder: string;
-  opponentPlaceholder: string;
-};
-
-const T: Record<ELANGUAGES, Translations> = {
-  [ELANGUAGES.EN]: {
-    title: "Rating Calculator",
-    yourRating: "Your rating",
-    kValue: "K value",
-    opponents: "Opponents",
-    opponentRating: "Opponent rating",
-    win: "Win",
-    draw: "Draw",
-    lose: "Lose",
-    ratingChange: "Rating change",
-    newRating: "New rating",
-    ratingPlaceholder: "e.g. 2000",
-    opponentPlaceholder: "Opponent rating",
-  },
-  [ELANGUAGES.RU]: {
-    title: "Калькулятор рейтинга",
-    yourRating: "Ваш рейтинг",
-    kValue: "Значение K",
-    opponents: "Соперники",
-    opponentRating: "Рейтинг соперника",
-    win: "Победа",
-    draw: "Ничья",
-    lose: "Поражение",
-    ratingChange: "Изменение рейтинга",
-    newRating: "Новый рейтинг",
-    ratingPlaceholder: "напр. 2000",
-    opponentPlaceholder: "Рейтинг соперника",
-  },
-  [ELANGUAGES.HY]: {
-    title: "Վարկանիշի հաշվիչ",
-    yourRating: "Ձեր վարկանիշը",
-    kValue: "K արժեք",
-    opponents: "Մրցակիցներ",
-    opponentRating: "Մրցակցի վարկանիշ",
-    win: "Հաղթանակ",
-    draw: "Ոչ ոքի",
-    lose: "Պարտություն",
-    ratingChange: "Վարկանիշի փոփոխություն",
-    newRating: "Նոր վարկանիշ",
-    ratingPlaceholder: "Օրինակ՝ 2000",
-    opponentPlaceholder: "Մրցակցի վարկանիշ",
-  },
-};
 
 let nextId = 1;
 
@@ -217,13 +151,12 @@ export default function RatingCalculator({ lang }: { lang: ELANGUAGES }) {
           <div className={styles.resultRow}>
             <span className={styles.resultLabel}>{t.ratingChange}</span>
             <span
-              className={`${styles.resultValue} ${
-                ratingChange > 0
+              className={`${styles.resultValue} ${ratingChange > 0
                   ? styles.positive
                   : ratingChange < 0
-                  ? styles.negative
-                  : styles.neutral
-              }`}
+                    ? styles.negative
+                    : styles.neutral
+                }`}
             >
               {ratingChange > 0 ? "+" : ""}
               {ratingChange}
