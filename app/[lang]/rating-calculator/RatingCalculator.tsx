@@ -168,6 +168,8 @@ export default function RatingCalculator({ lang }: { lang: ELANGUAGES }) {
         </button>
       </div>
 
+      <p className={styles.notice}>{t.ratingDiffNotice}</p>
+
       <div className={styles.opponentsList}>
         {opponents.map((o, index) => (
           <OpponentRow

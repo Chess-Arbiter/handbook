@@ -187,6 +187,16 @@
   color: var(--danger);
 }
 
+.notice {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  background-color: var(--gray-alpha);
+  border-left: 3px solid var(--primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  margin: 0;
+}
+
 .gameChange {
   font-size: 0.9rem;
   font-weight: 600;

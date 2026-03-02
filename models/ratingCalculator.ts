@@ -16,6 +16,7 @@ export type TTranslations = {
     fetching: string;
     fetchError: string;
     urlPlaceholder: string;
+    ratingDiffNotice: string;
 };
 
 export type TResult = "win" | "draw" | "lose";

@@ -20,6 +20,7 @@ export const T: Record<ELANGUAGES, TTranslations> = {
         fetching: "Loading...",
         fetchError: "Failed to load data. Please check the URL and try again.",
         urlPlaceholder: "https://chess-results.com/...",
+        ratingDiffNotice: "If rating difference is more than 400, it is treated as 400.",
     },
     [ELANGUAGES.RU]: {
         title: "Калькулятор рейтинга",
@@ -39,6 +40,7 @@ export const T: Record<ELANGUAGES, TTranslations> = {
         fetching: "Загрузка...",
         fetchError: "Не удалось загрузить данные. Проверьте ссылку и попробуйте снова.",
         urlPlaceholder: "https://chess-results.com/...",
+        ratingDiffNotice: "Если разница рейтингов превышает 400, она считается равной 400.",
     },
     [ELANGUAGES.HY]: {
         title: "Վարկանիշի հաշվիչ",
@@ -58,5 +60,6 @@ export const T: Record<ELANGUAGES, TTranslations> = {
         fetching: "Բեռնվում է...",
         fetchError: "Չհաջողվեց բեռնել տվյալները: Ստուգեք հղումը եւ կրկին փորձեք:",
         urlPlaceholder: "https://chess-results.com/...",
+        ratingDiffNotice: "Եթե վարկանիշների տարբերությունը գերազանցում է 400-ը, այն համարվում է 400:",
     },
 };
