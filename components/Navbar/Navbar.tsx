@@ -5,10 +5,11 @@ import NavbarMobile from "./Navbar.mobile";
 import NavbarDesktop from "./Navbar.desktop";
 import withClientSideComponent from "../../hoc/withClientSideComponent";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import { INavbarProps } from "./Navbar.types";
 
 function Navbar({ currentPageParent }: { currentPageParent: string }) {
   const asPath = usePathname();
-  const query = useParams();
+  const query = useParams() as unknown as INavbarProps["query"];
 
   const isMobile = useMediaQuery("(max-width:1024px)");
 
