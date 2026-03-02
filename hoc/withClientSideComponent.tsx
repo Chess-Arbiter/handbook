@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-export default function withClientSideComponent(
-  Component: any,
-  Fallback?: any
+export default function withClientSideComponent<P extends object>(
+  Component: React.ComponentType<P>,
+  Fallback?: React.ReactElement
 ) {
-  return function Render(props: any) {
+  return function Render(props: P) {
     const [isReady, setIsReady] = useState(false);
 
     useEffect(() => {
@@ -12,9 +12,9 @@ export default function withClientSideComponent(
     }, []);
 
     if (!isReady) {
-      return Fallback || <div />;
+      return Fallback ?? <div />;
     }
-    
+
     return <Component {...props} />;
   };
 }

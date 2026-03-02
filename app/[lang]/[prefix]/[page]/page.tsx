@@ -1,8 +1,6 @@
 import MainLayout from "../../../../layouts/MainLayout";
 import AdditionalContents from "../../../../components/AdditionalContents/AdditionalContents";
 import { siteTitle } from "../../../../constants/titles";
-import "../../../../styles/globals.css";
-import "../../../../styles/theme.css";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import getData from "../../../../utils/getData";

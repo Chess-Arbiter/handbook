@@ -1,5 +1,7 @@
+import Link from "next/link";
 import LanguagesSelect from "../LanguagesSelect/LanguagesSelect";
 import SocialLink from "../SocialLink/SocialLink";
+import Icon from "../Icon/Icon";
 import useMobile from "../../hooks/useMobile";
 import { ELANGUAGES } from "../../models/languages";
 import { ESocialLinks } from "../../models/socialLinks";
@@ -20,6 +22,9 @@ export default function SidebarFooter({
 
   return (
     <footer className={`sidebar__footer ${styles.footer}`}>
+      <Link href={`/${query.lang}/rating-calculator`} aria-label="Rating Calculator">
+        <Icon name="calculator" />
+      </Link>
       <LanguagesSelect asPath={asPath} lang={query.lang} />
       <SocialLink
         href={`${ESocialLinks.fb}.${query.lang}`}
