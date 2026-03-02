@@ -5,6 +5,7 @@ interface IProps {
   opponent: IOpponent;
   index: number;
   showRemove: boolean;
+  ratingChange: number | null;
   onUpdate: (id: number, field: keyof Omit<IOpponent, "id">, value: string) => void;
   onRemove: (id: number) => void;
   labels: {
@@ -19,6 +20,7 @@ export default function OpponentRow({
   opponent,
   index,
   showRemove,
+  ratingChange,
   onUpdate,
   onRemove,
   labels,
@@ -44,6 +46,20 @@ export default function OpponentRow({
         <option value="draw">{labels.draw}</option>
         <option value="lose">{labels.lose}</option>
       </select>
+      {ratingChange !== null && (
+        <span
+          className={`${styles.gameChange} ${
+            ratingChange > 0
+              ? styles.positive
+              : ratingChange < 0
+              ? styles.negative
+              : styles.neutral
+          }`}
+        >
+          {ratingChange > 0 ? "+" : ""}
+          {ratingChange}
+        </span>
+      )}
       {showRemove && (
         <button
           className={styles.removeButton}

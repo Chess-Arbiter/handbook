@@ -6,7 +6,7 @@ import styles from "./rating-calculator.module.css";
 import { IOpponent } from "../../../models/ratingCalculator";
 import { T } from "../../../constants/ratingCalculator";
 import { parseChessResultsHtml } from "./helpers/parseChessResults";
-import { expectedScore, SCORE } from "./helpers/ratingMath";
+import { expectedScore, getGameChange, SCORE } from "./helpers/ratingMath";
 import UrlImportSection from "./components/UrlImportSection";
 import OpponentRow from "./components/OpponentRow";
 import RatingResult from "./components/RatingResult";
@@ -177,6 +177,7 @@ export default function RatingCalculator({ lang }: { lang: ELANGUAGES }) {
             showRemove={opponents.length > 1}
             onUpdate={updateOpponent}
             onRemove={removeOpponent}
+            ratingChange={getGameChange(o, ra, kValue)}
             labels={{
               opponentPlaceholder: t.opponentPlaceholder,
               win: t.win,
