@@ -11,6 +11,11 @@ export type Translations = {
     newRating: string;
     ratingPlaceholder: string;
     opponentPlaceholder: string;
+    chessResultsUrl: string;
+    importFromUrl: string;
+    fetching: string;
+    fetchError: string;
+    urlPlaceholder: string;
 };
 
 export type Result = "win" | "draw" | "lose";
