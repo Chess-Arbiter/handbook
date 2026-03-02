@@ -1,4 +1,4 @@
-export type Translations = {
+export type TTranslations = {
     title: string;
     yourRating: string;
     kValue: string;
@@ -18,10 +18,10 @@ export type Translations = {
     urlPlaceholder: string;
 };
 
-export type Result = "win" | "draw" | "lose";
+export type TResult = "win" | "draw" | "lose";
 
-export interface Opponent {
+export interface IOpponent {
     id: number;
     rating: string;
-    result: Result;
+    result: TResult;
 }

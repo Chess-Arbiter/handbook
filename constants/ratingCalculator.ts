@@ -1,7 +1,7 @@
 import { ELANGUAGES } from "../models/languages";
-import { Translations } from "../models/ratingCalculator";
+import { TTranslations } from "../models/ratingCalculator";
 
-export const T: Record<ELANGUAGES, Translations> = {
+export const T: Record<ELANGUAGES, TTranslations> = {
     [ELANGUAGES.EN]: {
         title: "Rating Calculator",
         yourRating: "Your rating",
