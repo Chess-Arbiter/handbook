@@ -29,7 +29,7 @@ export default function OpponentRow({
     <div className={styles.opponentRow}>
       <span className={styles.opponentIndex}>{index + 1}.</span>
       <input
-        className={styles.input}
+        className={`${styles.input} ${styles.narrowInput}`}
         type="number"
         placeholder={labels.opponentPlaceholder}
         value={opponent.rating}

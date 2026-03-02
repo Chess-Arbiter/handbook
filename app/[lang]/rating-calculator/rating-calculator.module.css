@@ -156,6 +156,10 @@
   width: auto;
 }
 
+.narrowInput {
+  width: 6rem;
+}
+
 .fetchButton {
   padding: 0.5rem 1rem;
   border: none;
