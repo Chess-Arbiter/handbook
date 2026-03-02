@@ -31,16 +31,22 @@ export function parseChessResultsHtml(
     }
   }
 
-  if (playerRating === null || !resultsTable) return null;
+  if (playerRating === null || !resultsTable) {
+    return null;
+  };
 
   const opponents: { rating: number; result: TResult }[] = [];
 
   for (const row of Array.from(resultsTable.querySelectorAll("tr"))) {
     const ratingCell = row.querySelector("td.CRr");
-    if (!ratingCell) continue; // skip header rows
+    if (!ratingCell) {
+      continue;
+    };
 
     const opponentRating = parseFloat(ratingCell.textContent?.trim() ?? "");
-    if (isNaN(opponentRating) || opponentRating <= 0) continue;
+    if (isNaN(opponentRating) || opponentRating <= 0) {
+      continue;
+    };
 
     const directCells = row.querySelectorAll(":scope > td");
     const lastCell = directCells[directCells.length - 1];
