@@ -204,3 +204,36 @@
   text-align: right;
   flex-shrink: 0;
 }
+
+@media (max-width: 480px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .urlInput {
+    width: 100%;
+  }
+
+  .fetchButton {
+    width: 100%;
+  }
+
+  .opponentRow {
+    flex-wrap: wrap;
+  }
+
+  .narrowInput {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+  }
+}
